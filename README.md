@@ -22,6 +22,10 @@ Recommended compiler : **gcc** compiler
 - Suffix
 - Operators
 
+------------------------
+[Datatype](https://github.com/csyouk/c-from-scratch/blob/master/Datatype.md)
+- format directives
+
 -------------------------
 [Represent variety of numbers using bits](https://github.com/csyouk/c-from-scratch/blob/master/Represent_NeNumber_FloatDouble.md)
 - Represent negative integer using "Signed Magnitude".
