@@ -79,6 +79,7 @@
     <ClCompile Include="168.c" />
     <ClCompile Include="169.c" />
     <ClCompile Include="170721-K.c" />
+    <ClCompile Include="170724.c" />
     <ClCompile Include="180.c" />
     <ClCompile Include="570.c" />
     <ClCompile Include="578.c" />

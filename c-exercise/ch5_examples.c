@@ -2505,7 +2505,7 @@ void main(void)
 {
 	// c,C,i,u,x,X,o,d,s에 사용
 	printf("폭지정 :%4s, %4s\n", "abc", "abcdef"); // 넘치면 모두 인쇄
-	printf("폭지정 :%4c,%4C\n", 'A', 'B');
+	printf("폭지정 :%-4c,%4C\n", 'A', 'B');
 	printf("폭지정 :%6d,%6u\n", -100, 100);
 
 	// i,u,x,X,o,d에 사용 : 좌 정렬시는 빈자리 0으로 채우지 않음
@@ -2885,7 +2885,7 @@ void main(void)
 // [5-28] Maximal Munch Rule
 /***********************************************************/
 
-#if 1
+#if 0
 #include<stdio.h>
 
 void main(void)
