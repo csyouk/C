@@ -1,5 +1,17 @@
 ﻿//#include <stdio.h>
+//void main(void)
+//{
+//	//float a = 3.5f;
+//	//printf("%x %p", a, &a);
 //
+//	signed int si;
+//	unsigned int ui;
+//	si = 4294967295u;
+//	ui = -1;
+//	printf("%d %u\n", si, ui);
+//	printf("%x %x\n", si, ui);
+//}
+
 //void main(void){
 //	//int a = -37; 
 //	//printf("=======================================\n");
@@ -37,6 +49,8 @@
 //	printf("%s", "Willtek"    \
 //		"Corporation\n");
 //}
+
+
 
 
 /***********************************************************/
@@ -2557,7 +2571,7 @@ void main(void)
 // [5-15] 음의 값
 /***********************************************************/
 
-#if 1
+#if 0
 #include <stdio.h>
 
 #define PRINTF_BINARY_PATTERN_INT8 "%c%c%c%c%c%c%c%c"
@@ -2591,8 +2605,11 @@ void main(void)
 //}
 
 void main(void){
-	printf("CONVERT HEX TO BIN " PRINTF_BINARY_PATTERN_INT8 "\n", PRINTF_BYTE_TO_BINARY_INT8(0x3A));
-	printf("CONVERT HEX TO BIN " PRINTF_BINARY_PATTERN_INT8 "\n", PRINTF_BYTE_TO_BINARY_INT8(-0x3A));
+	//printf("CONVERT HEX TO BIN " PRINTF_BINARY_PATTERN_INT8 "\n", PRINTF_BYTE_TO_BINARY_INT8(0x3A));
+	//printf("CONVERT HEX TO BIN " PRINTF_BINARY_PATTERN_INT8 "\n", PRINTF_BYTE_TO_BINARY_INT8(-0x3A));
+	printf(PRINTF_BINARY_PATTERN_INT32 "\n", PRINTF_BYTE_TO_BINARY_INT32(0x9583ed94));
+
+
 }
 #endif
 
@@ -2745,8 +2762,8 @@ void main(void)
 	b = -1;
 	c = c + 1;
 
-	printf("%d %u %u\n", a, b, c);
-}
+	printf("%d %d %u\n", a, b, c);
+}   
 #endif
 
 /***********************************************************/
@@ -2832,7 +2849,8 @@ void main(void)
 	ia = 5 / 3;
 	ib = 5 % 3;
 
-	fa = (float)(5 / 3);
+	//fa = (float)(5 / 3);
+	fa = (float)5 / 3;
 	fb = 5.f / 3.f;
 
 	ca = (char)((int)ca + 1);
@@ -2867,14 +2885,14 @@ void main(void)
 // [5-28] Maximal Munch Rule
 /***********************************************************/
 
-#if 0
+#if 1
 #include<stdio.h>
 
 void main(void)
 {
 	int a = 10, b = 5;
 
-	a = a++++ + b;
+	a = a+++++b;
 	printf("%d, %d\n", a, b);
 }
 #endif

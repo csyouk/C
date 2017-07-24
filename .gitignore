@@ -1,3 +1,4 @@
 c-exercise.opensdf
 *.log
 *.obj
+c-exercise\Debug\*
