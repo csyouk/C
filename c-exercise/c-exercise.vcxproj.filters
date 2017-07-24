@@ -22,9 +22,6 @@
     <Filter Include="소스 파일\function">
       <UniqueIdentifier>{1b5feaa9-4f64-4c9c-bed3-b7af40dd21ee}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\chpater1">
-      <UniqueIdentifier>{294b0d2c-2592-4c22-976c-69355653e0f3}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\header_level_test">
       <UniqueIdentifier>{46bb64c0-53b3-47de-a202-bb0a2da3de8b}</UniqueIdentifier>
     </Filter>
@@ -46,6 +43,15 @@
     <Filter Include="소스 파일\loop">
       <UniqueIdentifier>{e26fa662-dad5-4728-8da8-2cb9f8bd9bd3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\test">
+      <UniqueIdentifier>{d31105d4-f39d-4c74-a3b2-ae5f97caaf7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ch5">
+      <UniqueIdentifier>{33bdcdc2-ffb1-4578-b5a3-0b3bc1d4b848}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ch1">
+      <UniqueIdentifier>{294b0d2c-2592-4c22-976c-69355653e0f3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="body.c">
@@ -61,40 +67,40 @@
       <Filter>소스 파일\function</Filter>
     </ClCompile>
     <ClCompile Include="chapter1.c">
-      <Filter>소스 파일\chpater1</Filter>
+      <Filter>소스 파일\ch1</Filter>
     </ClCompile>
     <ClCompile Include="enumeration.c">
-      <Filter>소스 파일\chpater1</Filter>
+      <Filter>소스 파일\ch1</Filter>
     </ClCompile>
     <ClCompile Include="format_directive.c">
-      <Filter>소스 파일\chpater1</Filter>
+      <Filter>소스 파일\ch1</Filter>
     </ClCompile>
     <ClCompile Include="operator.c">
-      <Filter>소스 파일\chpater1</Filter>
+      <Filter>소스 파일\ch1</Filter>
     </ClCompile>
     <ClCompile Include="pointer.c">
-      <Filter>소스 파일\chpater1</Filter>
+      <Filter>소스 파일\ch1</Filter>
     </ClCompile>
     <ClCompile Include="preprocessor.c">
-      <Filter>소스 파일\chpater1</Filter>
+      <Filter>소스 파일\ch1</Filter>
     </ClCompile>
     <ClCompile Include="scanning.c">
-      <Filter>소스 파일\chpater1</Filter>
+      <Filter>소스 파일\ch1</Filter>
     </ClCompile>
     <ClCompile Include="scratch.c">
-      <Filter>소스 파일\chpater1</Filter>
+      <Filter>소스 파일\ch1</Filter>
     </ClCompile>
     <ClCompile Include="sizeof.c">
-      <Filter>소스 파일\chpater1</Filter>
+      <Filter>소스 파일\ch1</Filter>
     </ClCompile>
     <ClCompile Include="structure.c">
-      <Filter>소스 파일\chpater1</Filter>
+      <Filter>소스 파일\ch1</Filter>
     </ClCompile>
     <ClCompile Include="variable.c">
-      <Filter>소스 파일\chpater1</Filter>
+      <Filter>소스 파일\ch1</Filter>
     </ClCompile>
     <ClCompile Include="workshop-2.c">
-      <Filter>소스 파일\chpater1</Filter>
+      <Filter>소스 파일\ch1</Filter>
     </ClCompile>
     <ClCompile Include="dec_hex.c">
       <Filter>소스 파일\function</Filter>
@@ -122,9 +128,6 @@
     </ClCompile>
     <ClCompile Include="function1_self_diagnosis.c">
       <Filter>소스 파일\junol</Filter>
-    </ClCompile>
-    <ClCompile Include="ifelsestatement.c">
-      <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="실력1856.c">
       <Filter>소스 파일\junol</Filter>
@@ -162,9 +165,6 @@
     <ClCompile Include="self_c_function_2.c">
       <Filter>소스 파일\junol</Filter>
     </ClCompile>
-    <ClCompile Include="exam.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="domino.c">
       <Filter>소스 파일\junol</Filter>
     </ClCompile>
@@ -183,8 +183,20 @@
     <ClCompile Include="578.c">
       <Filter>소스 파일\junol</Filter>
     </ClCompile>
-    <ClCompile Include="levetest.c">
+    <ClCompile Include="levetest170724.c">
       <Filter>소스 파일\junol</Filter>
+    </ClCompile>
+    <ClCompile Include="exam.c">
+      <Filter>소스 파일\test</Filter>
+    </ClCompile>
+    <ClCompile Include="ifelsestatement.c">
+      <Filter>소스 파일\workshop</Filter>
+    </ClCompile>
+    <ClCompile Include="170721-K.c">
+      <Filter>소스 파일\test</Filter>
+    </ClCompile>
+    <ClCompile Include="ch5_examples.c">
+      <Filter>소스 파일\ch5</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
