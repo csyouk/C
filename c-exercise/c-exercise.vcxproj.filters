@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\header_test">
+      <UniqueIdentifier>{3b8d1cdc-53a7-4e39-98d6-ccd96d341441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\fibonacci">
+      <UniqueIdentifier>{dda8cd16-cc8a-49c8-ac10-932da0eac07f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\function">
+      <UniqueIdentifier>{1b5feaa9-4f64-4c9c-bed3-b7af40dd21ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\chpater1">
+      <UniqueIdentifier>{294b0d2c-2592-4c22-976c-69355653e0f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\header_level_test">
+      <UniqueIdentifier>{46bb64c0-53b3-47de-a202-bb0a2da3de8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\preprocessor">
+      <UniqueIdentifier>{37247be9-f74b-4241-9ea8-af1fad3d6d78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\workshop">
+      <UniqueIdentifier>{0d91a602-4ecf-4a7d-b543-5346f72b2a73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\junol">
+      <UniqueIdentifier>{b28f03d4-8e6b-4279-8014-70afd3e9055d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\preview">
+      <UniqueIdentifier>{f4369350-e908-43e9-b6e3-42a7576b65c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\debugging">
+      <UniqueIdentifier>{43027a89-9871-4ffd-8659-693e7957a490}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\loop">
+      <UniqueIdentifier>{e26fa662-dad5-4728-8da8-2cb9f8bd9bd3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="body.c">
+      <Filter>소스 파일\header_test</Filter>
+    </ClCompile>
+    <ClCompile Include="caller.c">
+      <Filter>소스 파일\header_test</Filter>
+    </ClCompile>
+    <ClCompile Include="fibonacci.c">
+      <Filter>소스 파일\fibonacci</Filter>
+    </ClCompile>
+    <ClCompile Include="upper_lower.c">
+      <Filter>소스 파일\function</Filter>
+    </ClCompile>
+    <ClCompile Include="chapter1.c">
+      <Filter>소스 파일\chpater1</Filter>
+    </ClCompile>
+    <ClCompile Include="enumeration.c">
+      <Filter>소스 파일\chpater1</Filter>
+    </ClCompile>
+    <ClCompile Include="format_directive.c">
+      <Filter>소스 파일\chpater1</Filter>
+    </ClCompile>
+    <ClCompile Include="operator.c">
+      <Filter>소스 파일\chpater1</Filter>
+    </ClCompile>
+    <ClCompile Include="pointer.c">
+      <Filter>소스 파일\chpater1</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocessor.c">
+      <Filter>소스 파일\chpater1</Filter>
+    </ClCompile>
+    <ClCompile Include="scanning.c">
+      <Filter>소스 파일\chpater1</Filter>
+    </ClCompile>
+    <ClCompile Include="scratch.c">
+      <Filter>소스 파일\chpater1</Filter>
+    </ClCompile>
+    <ClCompile Include="sizeof.c">
+      <Filter>소스 파일\chpater1</Filter>
+    </ClCompile>
+    <ClCompile Include="structure.c">
+      <Filter>소스 파일\chpater1</Filter>
+    </ClCompile>
+    <ClCompile Include="variable.c">
+      <Filter>소스 파일\chpater1</Filter>
+    </ClCompile>
+    <ClCompile Include="workshop-2.c">
+      <Filter>소스 파일\chpater1</Filter>
+    </ClCompile>
+    <ClCompile Include="dec_hex.c">
+      <Filter>소스 파일\function</Filter>
+    </ClCompile>
+    <ClCompile Include="header_level_test.c">
+      <Filter>소스 파일\header_level_test</Filter>
+    </ClCompile>
+    <ClCompile Include="function_caller.c">
+      <Filter>소스 파일\function</Filter>
+    </ClCompile>
+    <ClCompile Include="function_callee.c">
+      <Filter>소스 파일\function</Filter>
+    </ClCompile>
+    <ClCompile Include="call_by_value.c">
+      <Filter>소스 파일\function</Filter>
+    </ClCompile>
+    <ClCompile Include="call_by_ref.c">
+      <Filter>소스 파일\function</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocessor_exercise.c">
+      <Filter>소스 파일\preprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="day3.c">
+      <Filter>소스 파일\workshop</Filter>
+    </ClCompile>
+    <ClCompile Include="function1_self_diagnosis.c">
+      <Filter>소스 파일\junol</Filter>
+    </ClCompile>
+    <ClCompile Include="ifelsestatement.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="실력1856.c">
+      <Filter>소스 파일\junol</Filter>
+    </ClCompile>
+    <ClCompile Include="diff_time.c">
+      <Filter>소스 파일\junol</Filter>
+    </ClCompile>
+    <ClCompile Include="day4.c">
+      <Filter>소스 파일\workshop</Filter>
+    </ClCompile>
+    <ClCompile Include="570.c">
+      <Filter>소스 파일\junol</Filter>
+    </ClCompile>
+    <ClCompile Include="168.c">
+      <Filter>소스 파일\junol</Filter>
+    </ClCompile>
+    <ClCompile Include="169.c">
+      <Filter>소스 파일\junol</Filter>
+    </ClCompile>
+    <ClCompile Include="586.c">
+      <Filter>소스 파일\junol</Filter>
+    </ClCompile>
+    <ClCompile Include="180.c">
+      <Filter>소스 파일\junol</Filter>
+    </ClCompile>
+    <ClCompile Include="gotosum.c">
+      <Filter>소스 파일\preview</Filter>
+    </ClCompile>
+    <ClCompile Include="self_c_func_2.c">
+      <Filter>소스 파일\junol</Filter>
+    </ClCompile>
+    <ClCompile Include="self_c_func_2_1.c">
+      <Filter>소스 파일\junol</Filter>
+    </ClCompile>
+    <ClCompile Include="self_c_function_2.c">
+      <Filter>소스 파일\junol</Filter>
+    </ClCompile>
+    <ClCompile Include="exam.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="domino.c">
+      <Filter>소스 파일\junol</Filter>
+    </ClCompile>
+    <ClCompile Include="debug.c">
+      <Filter>소스 파일\debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="forloop.c">
+      <Filter>소스 파일\loop</Filter>
+    </ClCompile>
+    <ClCompile Include="whileloop.c">
+      <Filter>소스 파일\loop</Filter>
+    </ClCompile>
+    <ClCompile Include="dowhile.c">
+      <Filter>소스 파일\loop</Filter>
+    </ClCompile>
+    <ClCompile Include="578.c">
+      <Filter>소스 파일\junol</Filter>
+    </ClCompile>
+    <ClCompile Include="levetest.c">
+      <Filter>소스 파일\junol</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="body.h">
+      <Filter>소스 파일\header_test</Filter>
+    </ClInclude>
+    <ClInclude Include="header_level_test.h">
+      <Filter>소스 파일\header_level_test</Filter>
+    </ClInclude>
+    <ClInclude Include="function_callee.h">
+      <Filter>소스 파일\function</Filter>
+    </ClInclude>
+    <ClInclude Include="day3.h">
+      <Filter>소스 파일\workshop</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

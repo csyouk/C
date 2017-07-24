@@ -1,0 +1,1 @@
+int change_case(char c);

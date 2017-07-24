@@ -1,0 +1,58 @@
+﻿빌드 시작: 2017-07-24 오전 9:03:40
+     1>2 노드의 "C:\Users\student\documents\visual studio 2013\Projects\c-exercise\c-exercise\c-exercise.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt levetest.c
+         levetest.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\student\documents\visual studio 2013\Projects\c-exercise\Debug\c-exercise.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\student\documents\visual studio 2013\Projects\c-exercise\Debug\c-exercise.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\student\documents\visual studio 2013\Projects\c-exercise\Debug\c-exercise.lib" /MACHINE:X86 Debug\168.obj
+         Debug\169.obj
+         Debug\180.obj
+         Debug\570.obj
+         Debug\578.obj
+         Debug\586.obj
+         Debug\body.obj
+         Debug\caller.obj
+         Debug\call_by_ref.obj
+         Debug\call_by_value.obj
+         Debug\chapter1.obj
+         Debug\day3.obj
+         Debug\day4.obj
+         Debug\debug.obj
+         Debug\dec_hex.obj
+         Debug\diff_time.obj
+         Debug\domino.obj
+         Debug\dowhile.obj
+         Debug\enumeration.obj
+         Debug\exam.obj
+         Debug\fibonacci.obj
+         Debug\forloop.obj
+         Debug\format_directive.obj
+         Debug\function1_self_diagnosis.obj
+         Debug\function_caller.obj
+         Debug\function_callee.obj
+         Debug\gotosum.obj
+         Debug\header_level_test.obj
+         Debug\ifelsestatement.obj
+         Debug\levetest.obj
+         Debug\operator.obj
+         Debug\pointer.obj
+         Debug\preprocessor.obj
+         Debug\preprocessor_exercise.obj
+         Debug\scanning.obj
+         Debug\scratch.obj
+         Debug\self_c_function_2.obj
+         Debug\self_c_func_2.obj
+         Debug\self_c_func_2_1.obj
+         Debug\sizeof.obj
+         Debug\structure.obj
+         Debug\upper_lower.obj
+         Debug\variable.obj
+         Debug\whileloop.obj
+         "Debug\workshop-2.obj"
+         "Debug\실력1856.obj"
+         c-exercise.vcxproj -> C:\Users\student\documents\visual studio 2013\Projects\c-exercise\Debug\c-exercise.exe
+     1>"C:\Users\student\documents\visual studio 2013\Projects\c-exercise\c-exercise\c-exercise.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:00.32
