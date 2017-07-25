@@ -1,4 +1,7 @@
-# Variable, Scope
+# Variable, Variable Scope
+
+======================================
+**Contents about Variable Scope + Variable elements**
 - 변수의 유효범위를 알기 위해서는 다음과 같은 사전 지식들이 필요하다.
   - 변수의 지시자(specifier)의 역할.
   - 블록의 개념.
@@ -55,7 +58,59 @@
   - default :
 
 ### Modifier(수정자)
+- 수정자는 변수의 타입을 변경(modifiy) 시켜준다.
+  - **\*** : 포인터. 변수를 주소타입으로 바꿔준다.
+  - **[]** : 배열(array)이라고 읽는다. 변수를 한 개가 아닌 집합으로 바꿔준다.
+  - **()** : 함수(function)라고 읽으며, 변수를 함수로 바꿔줌.
+  - 예를 들어보면 다음과 같다.
+    - ```cpp int a;``` : 기본형 int타입 a.
+    - ```cpp int *a;``` : 주소 타입의 포인터가 됨.
+    - ```cpp int a[10];``` : a가 int 한 개가 아니라 10개 짤 집합(배열)이 된다.
+    - ```cpp int a(int); ``` : a가 int가 아니라 함수가 된다.
+
 ### Identifier(식별자)
+- 프로그램에서 **변수, 형식, 함수, 레이블** 에 제공하는 이름. 쉽게 말해서, 변수의 이름,
+함수의 이름, 레이블등에 쓰이는 것.
+  - C에서 함수의 식별자가 같으면, 반환 타입, 인자가 달라도 같은 함수로 취급한다. 즉 중복 선언이 불가하다.
+- identifier는 alphanumeric character와 underscore(\_)로만 구성된다.
+- identifier의 첫 글자는 반드시 alphabet만 와야 한다.
+- identifier는 예약어(reserved words)들은 피해야 한다.
+  - 다음은 예약어의 종류들이다.
+
+```cpp
+
+  auto	double	int	struct
+  break	else	long	switch
+  case	enum	register	typedef
+  const	extern	return	union
+  char	float	short	unsigned
+  continue	for	signed	volatile
+  default	goto	sizeof	void
+  do	if	static	while
+
+```
+
+- 실제 코드에서 예약어들을 찾아보자.
+
+```cpp
+
+#include <stdio.h>
+int main(){
+  int qty = 45;
+  float price = 12.75;
+  char item_Code = 'A';
+  char C_name[20] = "Naomi";
+  printf("%s take %d %c item which price is $%0.2f per item\n",C_name,qty,item_Code,price);
+  return 0;
+}
+
+```
+- 위 코드에서 identifier들을 적어보면 다음과 같다.
+  - qty
+  - price
+  - item_Code
+  - C_name
+
 
 ## Stack
 - c에서 메모리를 취급하는 방법을 제대로 이해하기 위해서는 스택에 대한 이해가 필요하다.
@@ -102,11 +157,13 @@ void main(void)
 }
 ```
 
-
-
 ## Local Variable
 - 실행시에 값이 생성되고 저장된다.
 - Block ( { } )단위로 유효하다.
 - 블록에 선언된 static 메모리는 블록 내부에서만 유효하나, 값 자체는 static memory영역에 저장된다.
 **또한, 이 값은 컴파일시점에 이미 저장영역과 값이 정해진다.**
--
+
+======================================
+**Contents about Variable(especially collection of data, eg. array, struct)**
+## Homogeneous
+## Heterogeneous

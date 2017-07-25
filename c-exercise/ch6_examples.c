@@ -828,7 +828,7 @@ int fa(int a, int b)
 // [6-27] local의 static 
 /***********************************************************/
 
-#if 1
+#if 0
 #include <stdio.h>
 
 void f1(void);

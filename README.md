@@ -70,10 +70,13 @@ Recommended compiler : **gcc** compiler
 - Kinds of operators.
 
 ------------------------
-[Variable, Scope](https://github.com/csyouk/deepdive_into_c/blob/master/Variable-Scope.md)
+[Variable, Variable Scope](https://github.com/csyouk/deepdive_into_c/blob/master/Variable-Scope.md)
 
 - Storage Class
 - Elements of variable.
+  - Specifier
+  - Modifier
+  - Identifier
 - Stack
 - Global variable
 - Local variable
