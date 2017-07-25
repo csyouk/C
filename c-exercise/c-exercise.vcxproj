@@ -93,6 +93,7 @@
     <ClCompile Include="call_by_value.c" />
     <ClCompile Include="ch5_examples.c" />
     <ClCompile Include="ch6_examples.c" />
+    <ClCompile Include="ch7_170725.c" />
     <ClCompile Include="chapter1.c" />
     <ClCompile Include="day3.c" />
     <ClCompile Include="day4.c" />
