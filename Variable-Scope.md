@@ -1,6 +1,6 @@
 # Variable, Variable Scope
 
-======================================
+------------------------  
 **Contents about Variable Scope + Variable elements**
 - 변수의 유효범위를 알기 위해서는 다음과 같은 사전 지식들이 필요하다.
   - 변수의 지시자(specifier)의 역할.
@@ -163,7 +163,7 @@ void main(void)
 - 블록에 선언된 static 메모리는 블록 내부에서만 유효하나, 값 자체는 static memory영역에 저장된다.
 **또한, 이 값은 컴파일시점에 이미 저장영역과 값이 정해진다.**
 
-======================================
+------------------------  
 **Contents about Variable(especially collection of data, eg. array, struct)**
 ## Homogeneous
 ## Heterogeneous
