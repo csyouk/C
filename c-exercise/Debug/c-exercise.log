@@ -1,10 +1,11 @@
-﻿빌드 시작: 2017-07-24 오후 9:39:23
+﻿빌드 시작: 2017-07-25 오전 10:07:58
      1>2 노드의 "C:\Users\student\Desktop\workspace\deepdive_into_c\c-exercise\c-exercise.vcxproj" 프로젝트(Build 대상)입니다.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt 170724.c ch5_examples.c
-         ch5_examples.c
-         170724.c
-         코드를 생성하고 있습니다...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ch6_examples.c
+         ch6_examples.c
+     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\ch6_examples.c(47): warning C4431: 형식 지정자가 없습니다. int로 가정합니다. 참고: C에서는 더 이상 기본 int를 지원하지 않습니다.
+     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\ch6_examples.c(47): warning C4218: 비표준 확장이 사용됨 : 저장소 클래스 또는 형식을 적어도 하나는 지정해야 합니다.
+     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\ch6_examples.c(66): warning C4189: 'local6' : 지역 변수가 초기화되었으나 참조되지 않았습니다.
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\student\Desktop\workspace\deepdive_into_c\Debug\c-exercise.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\student\Desktop\workspace\deepdive_into_c\Debug\c-exercise.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\student\Desktop\workspace\deepdive_into_c\Debug\c-exercise.lib" /MACHINE:X86 Debug\168.obj
          Debug\169.obj
@@ -19,6 +20,7 @@
          Debug\call_by_ref.obj
          Debug\call_by_value.obj
          Debug\ch5_examples.obj
+         Debug\ch6_examples.obj
          Debug\chapter1.obj
          Debug\day3.obj
          Debug\day4.obj
@@ -60,4 +62,4 @@
 
 빌드했습니다.
 
-경과 시간: 00:00:01.46
+경과 시간: 00:00:00.70

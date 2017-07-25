@@ -49,7 +49,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
@@ -89,6 +89,7 @@
     <ClCompile Include="call_by_ref.c" />
     <ClCompile Include="call_by_value.c" />
     <ClCompile Include="ch5_examples.c" />
+    <ClCompile Include="ch6_examples.c" />
     <ClCompile Include="chapter1.c" />
     <ClCompile Include="day3.c" />
     <ClCompile Include="day4.c" />
