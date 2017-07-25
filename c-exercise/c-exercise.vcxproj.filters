@@ -210,6 +210,21 @@
     <ClCompile Include="exam2.c">
       <Filter>소스 파일\ch6</Filter>
     </ClCompile>
+    <ClCompile Include="experiment_ch6_extern-1.c">
+      <Filter>소스 파일\ch6</Filter>
+    </ClCompile>
+    <ClCompile Include="experiment_ch6_extern-2.c">
+      <Filter>소스 파일\ch6</Filter>
+    </ClCompile>
+    <ClCompile Include="170725.c">
+      <Filter>소스 파일\workshop</Filter>
+    </ClCompile>
+    <ClCompile Include="170725-1.c">
+      <Filter>소스 파일\workshop</Filter>
+    </ClCompile>
+    <ClCompile Include="170725-2.c">
+      <Filter>소스 파일\workshop</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="body.h">
@@ -223,6 +238,9 @@
     </ClInclude>
     <ClInclude Include="day3.h">
       <Filter>소스 파일\workshop</Filter>
+    </ClInclude>
+    <ClInclude Include="experiment_ch6_extern-1.h">
+      <Filter>소스 파일\ch6</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

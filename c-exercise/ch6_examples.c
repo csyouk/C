@@ -534,7 +534,7 @@ void main(void)
 // [6-17] 변수들의 specifier, class, scope, lifetime, 초기값
 /***********************************************************/
 
-#if 1
+#if 0
 #include <stdio.h>
 
 int a;
@@ -708,8 +708,9 @@ void main(void)
 
 void door(void)
 {
-
-
+	static int n;
+	n++;
+	if (!(n % 12)) printf("Closed[%d]\n", n);
 }
 
 void main(void)
@@ -744,7 +745,7 @@ void inc(void)
 
 void main(void)
 {
-	int b;
+	//int b;
 	register int c = 200;
 
 	a++, b++, c++;
@@ -827,7 +828,7 @@ int fa(int a, int b)
 // [6-27] local의 static 
 /***********************************************************/
 
-#if 0
+#if 1
 #include <stdio.h>
 
 void f1(void);

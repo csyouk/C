@@ -1,21 +1,16 @@
-﻿빌드 시작: 2017-07-25 오후 4:15:33
+﻿빌드 시작: 2017-07-25 오후 7:50:36
      1>2 노드의 "C:\Users\student\Desktop\workspace\deepdive_into_c\c-exercise\c-exercise.vcxproj" 프로젝트(Build 대상)입니다.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ch6_examples.c exam2.c
-         exam2.c
-     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\exam2.c(95): warning C4206: 비표준 확장이 사용됨 : 변환 단위가 비어 있습니다.
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ch6_examples.c
          ch6_examples.c
-     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\ch6_examples.c(547): warning C4189: 'a' : 지역 변수가 초기화되었으나 참조되지 않았습니다.
-     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\ch6_examples.c(548): warning C4101: 'b' :참조되지 않은 지역 변수입니다.
-     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\ch6_examples.c(550): warning C4101: 'd' :참조되지 않은 지역 변수입니다.
-     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\ch6_examples.c(554): warning C4189: 'a' : 지역 변수가 초기화되었으나 참조되지 않았습니다.
-     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\ch6_examples.c(557): warning C4101: 'd' :참조되지 않은 지역 변수입니다.
-         코드를 생성하고 있습니다...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\student\Desktop\workspace\deepdive_into_c\Debug\c-exercise.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\student\Desktop\workspace\deepdive_into_c\Debug\c-exercise.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\student\Desktop\workspace\deepdive_into_c\Debug\c-exercise.lib" /MACHINE:X86 Debug\168.obj
          Debug\169.obj
          "Debug\170721-K.obj"
          Debug\170724.obj
+         "Debug\170725-1.obj"
+         "Debug\170725-2.obj"
+         Debug\170725.obj
          Debug\180.obj
          Debug\570.obj
          Debug\578.obj
@@ -37,6 +32,8 @@
          Debug\enumeration.obj
          Debug\exam.obj
          Debug\exam2.obj
+         "Debug\experiment_ch6_extern-1.obj"
+         "Debug\experiment_ch6_extern-2.obj"
          Debug\fibonacci.obj
          Debug\forloop.obj
          Debug\format_directive.obj
@@ -68,4 +65,4 @@
 
 빌드했습니다.
 
-경과 시간: 00:00:00.63
+경과 시간: 00:00:01.22

@@ -68,3 +68,12 @@ Recommended compiler : **gcc** compiler
 
 - Operator precedence
 - Kinds of operators.
+
+------------------------
+[Variable, Scope](https://github.com/csyouk/c-from-scratch/blob/master/Variable-Scope.md)
+
+- Storage Class
+- Elements of variable.
+- Stack
+- Global variable
+- Local variable
