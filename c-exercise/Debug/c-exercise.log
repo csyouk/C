@@ -1,12 +1,11 @@
-﻿빌드 시작: 2017-07-25 오후 10:21:44
+﻿빌드 시작: 2017-07-26 오전 8:53:21
      1>2 노드의 "C:\Users\student\Desktop\workspace\deepdive_into_c\c-exercise\c-exercise.vcxproj" 프로젝트(Build 대상)입니다.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ch7_170725.c
-         ch7_170725.c
-     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\ch7_170725.c(7): warning C4045: 'b' : 배열 범위에 오버플로가 발생했습니다.
-     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\ch7_170725.c(50): warning C4189: 'ddd_arr' : 지역 변수가 초기화되었으나 참조되지 않았습니다.
-     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\ch7_170725.c(46): warning C4189: 'dd_arr' : 지역 변수가 초기화되었으나 참조되지 않았습니다.
-     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\ch7_170725.c(45): warning C4189: 'd_arr' : 지역 변수가 초기화되었으나 참조되지 않았습니다.
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ch_170725.c pre_ch7_170725.c
+         pre_ch7_170725.c
+     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\pre_ch7_170725.c(60): warning C4206: 비표준 확장이 사용됨 : 변환 단위가 비어 있습니다.
+         ch_170725.c
+         코드를 생성하고 있습니다...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\student\Desktop\workspace\deepdive_into_c\Debug\c-exercise.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\student\Desktop\workspace\deepdive_into_c\Debug\c-exercise.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\student\Desktop\workspace\deepdive_into_c\Debug\c-exercise.lib" /MACHINE:X86 Debug\168.obj
          Debug\169.obj
@@ -25,7 +24,8 @@
          Debug\call_by_value.obj
          Debug\ch5_examples.obj
          Debug\ch6_examples.obj
-         Debug\ch7_170725.obj
+         Debug\ch_170725.obj
+         Debug\pre_ch7_170725.obj
          Debug\chapter1.obj
          Debug\day3.obj
          Debug\day4.obj
@@ -70,4 +70,4 @@
 
 빌드했습니다.
 
-경과 시간: 00:00:01.26
+경과 시간: 00:00:03.02

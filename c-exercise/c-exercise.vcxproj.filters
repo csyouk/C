@@ -228,7 +228,10 @@
     <ClCompile Include="170725-2.c">
       <Filter>소스 파일\workshop</Filter>
     </ClCompile>
-    <ClCompile Include="ch7_170725.c">
+    <ClCompile Include="pre_ch7_170725.c">
+      <Filter>소스 파일\ch7</Filter>
+    </ClCompile>
+    <ClCompile Include="ch_170725.c">
       <Filter>소스 파일\ch7</Filter>
     </ClCompile>
   </ItemGroup>
