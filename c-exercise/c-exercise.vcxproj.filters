@@ -207,6 +207,9 @@
     <ClCompile Include="ch6_examples.c">
       <Filter>소스 파일\ch6</Filter>
     </ClCompile>
+    <ClCompile Include="exam2.c">
+      <Filter>소스 파일\ch6</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="body.h">

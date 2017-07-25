@@ -145,8 +145,9 @@ void main(void)
 	{
 		int b = 30;
 		printf("%d %d %d\n", a, b, c);
-		printf("%d %d %d %d\n", a, b, c, d);
+		//printf("%d %d %d %d\n", a, b, c, d);
 	}
+	printf("%d %d %d\n", a, b, c);
 }
 #endif
 
@@ -157,7 +158,7 @@ void main(void)
 #if 0
 #include <stdio.h>
 
-int add(int a, int b)
+int ch6_add(int a, int b)
 {
 	int c;
 
@@ -177,7 +178,7 @@ void main(void)
 	int c = 100;
 
 	printf("main: %d %d %d\n", a, b, c);
-	r = add(a, b);
+	r = ch6_add(a, b);
 	printf("add() = %d\n", r);
 	printf("main: %d %d %d\n", a, b, c);
 }
@@ -233,9 +234,11 @@ void main(void)
 	int a = 0x12345678;
 	char b = 0x75;
 	int c = 0xABCDEF01;
+	short d = 0x1234;
+	double e = 3.14;
 
-	printf("%#p, %#p, %#p\n", &a, &b, &c);
-	printf("%#.8x, %#.8x, %#.8x\n", a, b, c);
+	printf("%#p, %#p, %#p, %#p, %#p\n", &a, &b, &c, &d, &e);
+	printf("%#.8x, %#.8x, %#.8x, %#.8x, %#.8x\n", a, b, c, d, e);
 }
 #endif
 
@@ -246,7 +249,7 @@ void main(void)
 #if 0
 #include <stdio.h>
 
-int add(int a, int b)
+int ch6_add(int a, int b)
 {
 	int c;
 
@@ -260,7 +263,7 @@ void main(void)
 {
 	int r;
 
-	r = add(3, 4);
+	r = ch6_add(3, 4);
 
 	printf("%#p, %d\n", &r, r);
 }
@@ -423,7 +426,7 @@ void main(void)
 #if 0
 #include <stdio.h>
 
-int add(int a, int b)
+int ch6_add(int a, int b)
 {
 	int c = a + b;
 
@@ -436,7 +439,7 @@ void main(void)
 	int b = 3;
 	int c;
 
-	c = add(add(a, b), add(a + 1, b + 1));
+	c = ch6_add(ch6_add(a, b), ch6_add(a + 1, b + 1));
 
 	printf("%d\n", c);
 }
@@ -485,10 +488,53 @@ void main(void)
 
 
 /***********************************************************/
-// [6-17] 변수들의 specifier, class, scope, lifetime, 초기값
+// [6-16.1] 손파일링 연습 – 문제 만들어 보기.
 /***********************************************************/
 
 #if 0
+#include <stdio.h>
+
+int a = -1;
+int b;
+int c = 2;
+
+int f2(int a, int b)
+{
+	int c = a + b % 2;
+	return c * 3;
+}
+
+int f1(int a, int x)
+{
+	int d = 13;
+
+	c = d + a - x;
+	return b = f2(b = c + d, a) + 1;
+}
+
+void main(void)
+{
+	int b = 10;
+	int x = 3;
+	int d = f1(x = b + a, a);
+
+	printf("%d %d %d %d\n", a, b, c, d);
+
+	f2(a = f2(b, a = x + 1), a = f1(b, d = a + 1));
+
+	printf("%d %d %d %d\n", a, b, c, d);
+
+	// -1 10 23 112
+	// 30 10 23 0
+}
+#endif
+
+
+/***********************************************************/
+// [6-17] 변수들의 specifier, class, scope, lifetime, 초기값
+/***********************************************************/
+
+#if 1
 #include <stdio.h>
 
 int a;
@@ -506,9 +552,11 @@ void main(void)
 
 	{
 		int a = 30;
-		static int c = 100;
+		//static int c = 100;
+		c = 100;
 		auto int d;
 	}
+	//printf("static int c = %d\n", c);
 }
 #endif
 
@@ -521,7 +569,7 @@ void main(void)
 
 int a = 100;
 int b = 10 * 2;
-int c = a + 1;
+int c = a + 1;  // 전역 변수의 위치에는 상수식이 와야 한다.
 int d = sizeof(int);
 
 int add(int a, int b)
@@ -535,7 +583,8 @@ void main(void)
 	int b = c;
 	int c = d * 2;
 	int d = add(a, b);
-	static int s = d;
+	static int s = d; // main함수의 위치에 선언되어 있다고 하더라도, 
+	                  // 컴파일 시점에 메모리 할당이 결정되므로, 상수식이 와야한다.
 
 	printf("a=%d\n", a);
 	printf("b=%d\n", b);

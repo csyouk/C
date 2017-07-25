@@ -100,6 +100,7 @@
     <ClCompile Include="dowhile.c" />
     <ClCompile Include="enumeration.c" />
     <ClCompile Include="exam.c" />
+    <ClCompile Include="exam2.c" />
     <ClCompile Include="fibonacci.c" />
     <ClCompile Include="forloop.c" />
     <ClCompile Include="format_directive.c" />
