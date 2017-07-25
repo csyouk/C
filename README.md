@@ -4,7 +4,7 @@ This document follows C90.
 Recommended compiler : **gcc** compiler
 
 ------------------------
-[Git configuration](https://github.com/csyouk/c-from-scratch/blob/master/How-To-Manage-Git.md)
+[Git configuration](https://github.com/csyouk/deepdive_into_c/blob/master/How-To-Manage-Git.md)
 
 ------------------------
 [Editing md files in Chrome](https://developers.google.com/web/tools/setup/setup-workflow)
@@ -12,7 +12,7 @@ Recommended compiler : **gcc** compiler
 - By doing so, you can edit md files at chrome web browser.
 
 ------------------------
-[C Basics](https://github.com/csyouk/c-from-scratch/blob/master/Introduction.md)
+[C Basics](https://github.com/csyouk/deepdive_into_c/blob/master/Introduction.md)
 
 - Special characters
 - Numeral system
@@ -23,11 +23,11 @@ Recommended compiler : **gcc** compiler
 - Operators
 
 ------------------------
-[Datatype](https://github.com/csyouk/c-from-scratch/blob/master/Datatype.md)
+[Datatype](https://github.com/csyouk/deepdive_into_c/blob/master/Datatype.md)
 - format directives
 
 -------------------------
-[Represent variety of numbers using bits](https://github.com/csyouk/c-from-scratch/blob/master/Represent_NeNumber_FloatDouble.md)
+[Represent variety of numbers using bits](https://github.com/csyouk/deepdive_into_c/blob/master/Represent_NeNumber_FloatDouble.md)
 - Represent negative integer using "Signed Magnitude".
 - Represent negative integer using "1's complement".
 - Represent negative integer using "2's complement".
@@ -36,14 +36,14 @@ Recommended compiler : **gcc** compiler
 
 
 ------------------------
-[Function](https://github.com/csyouk/c-from-scratch/blob/master/Function.md)
+[Function](https://github.com/csyouk/deepdive_into_c/blob/master/Function.md)
 
 - module
 - function vs procedure
 - signature(return type, argument, function name, )
 
 ------------------------
-[Preprocessor](https://github.com/csyouk/c-from-scratch/blob/master/Preprocessor.md)
+[Preprocessor](https://github.com/csyouk/deepdive_into_c/blob/master/Preprocessor.md)
 
 - How preprocessor works.
 - ```#include```
@@ -53,7 +53,7 @@ Recommended compiler : **gcc** compiler
 
 
 ------------------------
-[Statement](https://github.com/csyouk/c-from-scratch/blob/master/Statement.md)
+[Statement](https://github.com/csyouk/deepdive_into_c/blob/master/Statement.md)
 
 - Declaration ( declare variable, function, macro )
 - Expression ( assign , calculate )
@@ -64,13 +64,13 @@ Recommended compiler : **gcc** compiler
 - Branch ( return, break, continue, goto )
 
 ------------------------
-[Operators](https://github.com/csyouk/c-from-scratch/blob/master/Operators.md)
+[Operators](https://github.com/csyouk/deepdive_into_c/blob/master/Operators.md)
 
 - Operator precedence
 - Kinds of operators.
 
 ------------------------
-[Variable, Scope](https://github.com/csyouk/c-from-scratch/blob/master/Variable-Scope.md)
+[Variable, Scope](https://github.com/csyouk/deepdive_into_c/blob/master/Variable-Scope.md)
 
 - Storage Class
 - Elements of variable.
