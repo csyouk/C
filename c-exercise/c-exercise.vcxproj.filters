@@ -234,6 +234,15 @@
     <ClCompile Include="ch_170725.c">
       <Filter>소스 파일\ch7</Filter>
     </ClCompile>
+    <ClCompile Include="ch7_recursive.c">
+      <Filter>소스 파일\ch7</Filter>
+    </ClCompile>
+    <ClCompile Include="ch7_examples.c">
+      <Filter>소스 파일\ch7</Filter>
+    </ClCompile>
+    <ClCompile Include="ch7_workshop_170726.c">
+      <Filter>소스 파일\ch7</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="body.h">
