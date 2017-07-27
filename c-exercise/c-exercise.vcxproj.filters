@@ -243,6 +243,12 @@
     <ClCompile Include="ch7_workshop_170726.c">
       <Filter>소스 파일\ch7</Filter>
     </ClCompile>
+    <ClCompile Include="ch7_170727.c">
+      <Filter>소스 파일\ch7</Filter>
+    </ClCompile>
+    <ClCompile Include="ch7_170727_workshop.c">
+      <Filter>소스 파일\ch7</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="body.h">

@@ -93,6 +93,8 @@
     <ClCompile Include="call_by_value.c" />
     <ClCompile Include="ch5_examples.c" />
     <ClCompile Include="ch6_examples.c" />
+    <ClCompile Include="ch7_170727.c" />
+    <ClCompile Include="ch7_170727_workshop.c" />
     <ClCompile Include="ch7_examples.c" />
     <ClCompile Include="ch7_recursive.c" />
     <ClCompile Include="ch7_workshop_170726.c" />

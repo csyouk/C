@@ -330,6 +330,8 @@
 //		if (!data[i]) break;
 //		printf("%c", data[i]);
 //	}
+//
+//  printf("%s", data); // 위와 같은 코드이다.
 //}
 
 
