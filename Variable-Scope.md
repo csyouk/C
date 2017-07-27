@@ -186,10 +186,10 @@ void main(void)
 // *
 
 // stack
-// |   3   |  ***  ↑    |
-// |   2   |  **   ↑    |  **  ↓
-// |   1   |  *    ↑    |  *   ↓
-// ---------
+// |   3   |  draw(3)   | print_star(3) ***  ↑    |
+// |   2   |  draw(2)   | print_star(2) **   ↑    |  print_star(2) **  ↓
+// |   1   |  draw(1)   | print_star(1) *    ↑    |  print_star(1) *   ↓
+// |-------| call stack |
 
 // 전역변수를 사용하면 다음과 같이 사용할 수 있다.
 #include <stdio.h>
