@@ -162,29 +162,81 @@
 // **
 // *
 
-
-#include <stdio.h>
-void star(int n){
-
-	
-}
-
-void main(void)
-{
-	int n;
-	scanf("%d", &n);
-
-}
-
-
-
+//
+//#include <stdio.h>
+//void star(int n){
+//
+//	
+//}
+//
+//void main(void)
+//{
+//	int n;
+//	scanf("%d", &n);
+//
+//}
+//
 
 
+//
+//void draw(int, int);
+//void star(int, int);
+//
+//void main(){
+//	int n;
+//	scanf("%d", &n);
+//	draw(n, 2 * n - 1);
+//}
+//
+//
+//void draw(int peak, int last){
+//
+//	if (last == peak) {
+//		star(peak, last);
+//		return;
+//	}
+//
+//	star(peak, last);
+//	draw(peak, last - 1);
+//	star(peak, last);
+//}
+//
+//void star(int peak, int last){
+//	for (int i = 2 * peak; i > last; i--) {
+//		printf("*");
+//	}
+//	printf("\n");
+//}
 
 
 
 
 
 
-
-
+//#include <stdio.h>
+//int peak;
+//
+//void draw(int);
+//void print_star(int);
+//
+//void main(void)
+//{
+//	scanf("%d", &peak);
+//	draw(1);
+//}
+//
+//void draw(int cnt)
+//{
+//	print_star(cnt);
+//	if (cnt == peak) return;
+//	draw(cnt + 1);
+//	print_star(cnt);
+//}
+//
+//void print_star(int iter_cnt)
+//{
+//	for (int i = 0; i < iter_cnt; i++) {
+//		printf("*");
+//	}
+//	printf("\n");
+//}

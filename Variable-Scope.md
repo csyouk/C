@@ -169,6 +169,60 @@ void main(void)
 - 블록에 선언된 static 메모리는 블록 내부에서만 유효하나, 값 자체는 static memory영역에 저장된다.
 **또한, 이 값은 컴파일시점에 이미 저장영역과 값이 정해진다.**
 
+
+------------------------  
+함수가 호출되면서 내부적으로 스택에 값이 쌓이는데, 이러한 성질을 이용해서 재귀함수를 사용할 수 있다.
+
+```cpp
+// 한 정수 N을 입력 받아서 N층의 이등변 삼각형 모양의 별을 출력하시오.
+// 단, 반드시 재귀함수로 구현하시오.
+// input 3
+
+// output
+// *
+// **
+// ***
+// **
+// *
+
+// stack
+// |   3   |  ***  ↑    |
+// |   2   |  **   ↑    |  **  ↓
+// |   1   |  *    ↑    |  *   ↓
+// ---------
+
+// 전역변수를 사용하면 다음과 같이 사용할 수 있다.
+#include <stdio.h>
+int peak;
+
+void draw(int);
+void print_star(int);
+
+void main(void)
+{
+	scanf("%d", &peak);
+	draw(1);
+}
+
+void draw(int cnt)
+{
+	print_star(cnt); // stack frame이 생성되면서 stack에 쌓인 변수 cnt를 사용.
+	if (cnt == peak) return;  // 전환점.
+	draw(cnt + 1);
+	print_star(cnt); // call stack이 사라지면서 stack frame에 남아있던 변수 cnt를 활용.
+}
+
+void print_star(int iter_cnt)
+{
+	for (int i = 0; i < iter_cnt; i++) {
+		printf("*");
+	}
+	printf("\n");
+}
+
+```
+
+
 ------------------------  
 **Contents about Variable(especially collection of data, eg. array, struct)**
 ## Homogeneous
