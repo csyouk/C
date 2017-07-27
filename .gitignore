@@ -3,3 +3,10 @@ c-exercise.opensdf
 *.obj
 c-exercise\Debug\*
 *.tlog
+*.log
+*.idb
+*.pdb
+*.ilk
+*.exe
+*.suo
+*.sdf

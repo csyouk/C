@@ -2,6 +2,18 @@
 
 void main(void){
 
+	//int a[][4] = { { 1, 2, 3, }, {3,4,5} };
+
+	//for (int i = 0; i < sizeof a / sizeof a[0]; i++)
+	//{
+	//	for (int j = 0; j < sizeof a[0] / sizeof a[0][0]; j++)
+	//	{
+	//		printf("%d ", a[i][j]);
+	//	}
+	//	printf("\n");
+	//}
+
+
 	struct st
 	{
 		int a;
@@ -51,5 +63,9 @@ void main(void){
 	ip2.sub[3] = 0x78;
 
 	printf("ip addr : %d.%d.%d.%d", ip2.sub[3], ip2.sub[2], ip2.sub[1], ip2.sub[0]);
+
+	union IP ip_1 = { 0x12345678 };
+
+	struct st xx = { 0x12345678 };
 }
 
