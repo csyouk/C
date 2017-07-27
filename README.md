@@ -80,3 +80,6 @@ Recommended compiler : **gcc** compiler
 - Stack
 - Global variable
 - Local variable
+
+------------------------
+[Struct, Union](https://github.com/csyouk/deepdive_into_c/blob/master/Struct-Union.md)

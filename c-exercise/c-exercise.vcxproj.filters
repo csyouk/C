@@ -58,6 +58,9 @@
     <Filter Include="소스 파일\ch7">
       <UniqueIdentifier>{3879024a-6323-44ff-8525-ce98ff08f5fa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\ch8">
+      <UniqueIdentifier>{fe82eead-31b8-4ed2-8032-94c2e0a90b45}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="body.c">
@@ -248,6 +251,9 @@
     </ClCompile>
     <ClCompile Include="ch7_170727_workshop.c">
       <Filter>소스 파일\ch7</Filter>
+    </ClCompile>
+    <ClCompile Include="ch8_pre.c">
+      <Filter>소스 파일\ch8</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

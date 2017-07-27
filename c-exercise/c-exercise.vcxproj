@@ -98,6 +98,7 @@
     <ClCompile Include="ch7_examples.c" />
     <ClCompile Include="ch7_recursive.c" />
     <ClCompile Include="ch7_workshop_170726.c" />
+    <ClCompile Include="ch8_pre.c" />
     <ClCompile Include="ch_170725.c" />
     <ClCompile Include="pre_ch7_170725.c" />
     <ClCompile Include="chapter1.c" />
