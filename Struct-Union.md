@@ -13,9 +13,10 @@
 ```cpp
 
 // 구조체 요소들의 각 명칭을 알아보자.
-// User를 tag라고 한다.
-// name, age, phoneNumber 등을 멤버라고 한다.
-// cs, yj, peter 등은 User타입을 통해 만들어진 변수이다.
+// struct를 '예약어'라고 한다.
+// User를 'tag'라고 한다.
+// name, age, phoneNumber 등을 '멤버'라고 한다.
+// cs, yj, peter 등은 User타입을 통해 만들어진 '변수'이다.
 
 struct User {
   char name[6];
