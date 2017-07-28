@@ -258,6 +258,9 @@
     <ClCompile Include="ch8_170728.c">
       <Filter>소스 파일\ch8</Filter>
     </ClCompile>
+    <ClCompile Include="ch8_workshop_170728.c">
+      <Filter>소스 파일\ch8</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="body.h">

@@ -268,7 +268,10 @@ void main(void){
 
 #endif
 
-#if 1
+#if 0
+int a = 3;
+//int b = a;
+
 void main(){
 	float f = 5 / 3;
 	printf("%d\n", 5 / 3 );    // 1
@@ -276,5 +279,8 @@ void main(){
 	printf("%f\n", f);         // 1.000000
 	printf("%f\n", 5.f / 3);   // 1.666667
 	printf("%f\n", 5.f / 3.f); // 1.666667
+
+	long double ld = 3.1;
+	printf("%f", ld);
 }
 #endif
