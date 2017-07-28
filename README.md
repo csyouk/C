@@ -5,11 +5,11 @@ Recommended compiler : **gcc** compiler
 
 ------------------------
 [Git configuration](https://github.com/csyouk/deepdive_into_c/blob/master/How-To-Manage-Git.md)
-
+[Reference : Soen](http://soen.kr/)
 ------------------------
 [Editing md files in Chrome](https://developers.google.com/web/tools/setup/setup-workflow)
 
-- By doing so, you can edit md files at chrome web browser.
+- By doing so, you can edit md files in chrome web browser.
 
 ------------------------
 [C Basics](https://github.com/csyouk/deepdive_into_c/blob/master/Introduction.md)
@@ -83,3 +83,7 @@ Recommended compiler : **gcc** compiler
 
 ------------------------
 [Struct, Union](https://github.com/csyouk/deepdive_into_c/blob/master/Struct-Union.md)
+
+- Structure
+- Union
+- Enumeration

@@ -1,4 +1,4 @@
-#include <stdio.h>
+//#include <stdio.h>
 
 // 1
 //void main(){
@@ -455,4 +455,54 @@
 //		}
 //	}
 //
+//}
+
+
+
+
+
+
+
+//#include <stdio.h>
+//
+//void clockwise_90(int s[3][3]);
+//
+//void main(){
+//	int row_sum, col_sum;
+//
+//	int s[3][3] = { 0 };
+//	int r[3][3] = { 0 };
+//
+//	for (int i = 0; i < 3; i++)
+//	{
+//		for (int j = 0; j < 3; j++)
+//		{
+//			scanf("%d", &s[i][j]);
+//		}
+//	}
+//
+//	clockwise_90(s, r);
+//	clockwise_90(r, s);
+//
+//
+//	for (int i = 0; i < 3; i++)
+//	{
+//		for (int j = 0; j < 3; j++)
+//		{
+//			printf("%d ", s[i][j]);
+//		}
+//		printf("\n");
+//	}
+//}
+//
+//void clockwise_90(int s[3][3], int r[3][3])
+//{
+//	int temp;
+//	for (int i = 0; i < 3; i++)
+//	{
+//		for (int j = i; j < 3 - i; j++)
+//		{
+//			r[j][2 - i] = s[i][j];
+//		}
+//	}
 //}

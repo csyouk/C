@@ -32,6 +32,7 @@ float add(float a, float b){return a + b;}
 ## How functions managed.
 
 - 먼저 이 주제를 이해하기 위해서는 stack frame이라는 개념을 이해할 필요가 있다.
+- stack frame의 정의는 **스택에 저장되는 함수의 호출 정보** 이다.
 - 먼저 그림을 보자.
 
 ![stack frame](https://i.stack.imgur.com/DAMVU.png)

@@ -226,4 +226,9 @@ void print_star(int iter_cnt)
 ------------------------  
 **Contents about Variable(especially collection of data, eg. array, struct)**
 ## Homogeneous
+- array
+
 ## Heterogeneous
+[자세한 문서는 이곳](https://github.com/csyouk/deepdive_into_c/blob/master/Struct-Union.md)
+- struct
+- union
