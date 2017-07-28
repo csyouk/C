@@ -304,7 +304,7 @@ void main(main)
 #endif
 
 
-#if 1
+#if 0
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

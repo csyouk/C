@@ -284,3 +284,20 @@ void main(){
 	printf("%f", ld);
 }
 #endif
+
+
+#if 1
+
+struct st
+{
+	char a;
+	char b;
+	char c;
+} x = {0x12, 0x34, 0x56};
+
+void main(void){
+	printf("%%x=%#.8x, %%d=%d, %%o=%o", x, x, x);
+	
+}
+
+#endif
