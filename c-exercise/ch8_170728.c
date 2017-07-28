@@ -253,7 +253,7 @@ void main(){
 
 #endif
 
-#if 1
+#if 0
 
 struct 
 {
@@ -266,4 +266,15 @@ void main(void){
 	//x = { 100, 'A' }; // 불가하다.
 }
 
+#endif
+
+#if 1
+void main(){
+	float f = 5 / 3;
+	printf("%d\n", 5 / 3 );    // 1
+	printf("%\n", 5 / 3);     // 0.000000
+	printf("%f\n", f);         // 1.000000
+	printf("%f\n", 5.f / 3);   // 1.666667
+	printf("%f\n", 5.f / 3.f); // 1.666667
+}
 #endif
