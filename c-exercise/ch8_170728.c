@@ -301,3 +301,11 @@ void main(void){
 }
 
 #endif
+
+#if 0
+void main(){
+	float ff = 3.625f;
+
+	printf("%x\n", ff);
+}
+#endif

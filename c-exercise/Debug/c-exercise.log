@@ -1,4 +1,4 @@
-﻿빌드 시작: 2017-07-28 오후 10:03:34
+﻿빌드 시작: 2017-07-29 오후 5:45:05
      1>2 노드의 "C:\Users\student\Desktop\workspace\deepdive_into_c\c-exercise\c-exercise.vcxproj" 프로젝트(Build 대상)입니다.
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ch8_170728.c
@@ -75,4 +75,4 @@
 
 빌드했습니다.
 
-경과 시간: 00:00:01.25
+경과 시간: 00:00:03.82
