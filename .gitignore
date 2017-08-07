@@ -11,3 +11,5 @@ c-exercise\Debug\*
 *.suo
 *.sdf
 *.sdf
+*.tlog
+*.obj
