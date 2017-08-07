@@ -1,9 +1,117 @@
 #include <stdio.h>
+#include <conio.h>
 #define FIRST 0
 #define SIZE(arr) (sizeof(arr) / sizeof(arr[FIRST]))
-//#define MAIN(source_code)  void main(void){source_code}
+#define MAIN(source_code)  void main(void){source_code}
 
-#if 1
+#if 0
+
+char * Vending_Machine(int num)
+{
+	static char drink[4][10] = { "콜라", "사이다", "환타", "막걸리" };
+	return drink[num];
+}
+
+void main(void)
+{
+	int choice;
+	unsigned char *p_choice = &choice;
+	while (1)
+	{
+		scanf("%d", p_choice);
+		printf("%s\n", Vending_Machine(choice));
+	}
+
+	//unsigned char choice;
+	//char *p = &choice;
+
+	//while (1){
+	//	choice = getch();
+	//	printf("%s\n", Vending_Machine(*p - '0'));
+	//}
+
+	//printf("%s\n", Vending_Machine(0));
+	//printf("%s\n", Vending_Machine(1));
+
+}
+
+#endif
+
+
+#if 0
+
+void percent_s(char *p)
+{
+	while (*p) printf("%c", *p++);	
+}
+
+void func(char *p)
+{
+	//for (;;)
+	//{
+	//	if (*p == '\0') break;
+	//	printf("%s\n", p);
+	//	p++;
+	//}
+
+	while (*p){
+		//if (*p == '\0') break;   // 필요없는 줄.
+		printf("%s\n", p);
+		p++;
+	}
+
+}
+
+void main(void)
+{
+	char *p = "Hello";
+	func(p);
+	percent_s(p);
+}
+
+#endif
+
+
+#if 0
+
+void func(char *p)
+{
+	for (;;)
+	{
+		if (*p == '\0') break;
+		printf("%c\n", *p);
+		p++;
+	}
+	
+}
+
+void main(void)
+{
+	char *p = "Hello";
+	func(p);
+
+}
+
+#endif
+
+#if 0
+
+void func(char *p)
+{
+	printf("%s\n", p);
+}
+
+void main(void)
+{
+	char *p = "Hello";
+	printf("%s\n", p);
+	func(p);
+	func("Hello");
+
+}
+#endif
+
+#if 0
 
 int sum(int num, int *p)
 {
@@ -44,10 +152,30 @@ void main(void){
 
 
 #if 0
-int * func(void)
+
+// 아래 4가지 표현식 모두 허용한다. 
+//int* func(void)
+//{
+//	static int a[4] = { 10, 20, 30, 40 };
+//	return a;
+//}
+
+//int *func(void)
+//{
+//	static int a[4] = { 10, 20, 30, 40 };
+//	return a;
+//}
+
+//int * func(void)
+//{
+//	static int a[4] = { 10, 20, 30, 40 };
+//	return a;
+//}
+
+int*func(void)
 {
 	static int a[4] = { 10, 20, 30, 40 };
-	return a;
+	return a+1;
 }
 
 
@@ -57,6 +185,10 @@ MAIN(
 	int *p;
 
 	p = func();
+
+	p[2] = 200;
+	p++;
+
 	for (i = 0; i < 4; i++)
 	{
 		printf("%d\n", p[i]);

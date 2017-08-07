@@ -103,6 +103,7 @@
     <ClCompile Include="ch8_workshop_170728.c" />
     <ClCompile Include="ch_170725.c" />
     <ClCompile Include="pointer_170807.c" />
+    <ClCompile Include="pointer_170807_workshop.c" />
     <ClCompile Include="pre_ch7_170725.c" />
     <ClCompile Include="chapter1.c" />
     <ClCompile Include="day3.c" />

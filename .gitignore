@@ -13,3 +13,4 @@ c-exercise\Debug\*
 *.sdf
 *.tlog
 *.obj
+*.tlog
