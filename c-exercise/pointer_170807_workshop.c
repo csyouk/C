@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 #define FIRST 0
 #define SIZE(arr) (sizeof(arr) / sizeof(arr[FIRST]))
 //#if 1
@@ -182,7 +184,7 @@ void main(void){
 
 
 // 14
-#if 1
+#if 0
 char * Week_Calc(int num){
 	static char days[7][10] = { "Sunday", "Monday", "Tuesday", \
 		"Wednesday", "Thursday", "Friday", "Satursday" };
@@ -191,7 +193,7 @@ char * Week_Calc(int num){
 }
 
 void main(void){
-
+	malloc(40);
 	int n;
 	scanf("%d", &n);
 	printf("%s\n", Week_Calc(n));

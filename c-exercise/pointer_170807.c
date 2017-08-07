@@ -1,8 +1,128 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <conio.h>
 #define FIRST 0
 #define SIZE(arr) (sizeof(arr) / sizeof(arr[FIRST]))
 #define MAIN(source_code)  void main(void){source_code}
+
+#if 1
+unsigned int str_length(const char *d){
+	int length = 0;
+	while (*d)
+	{
+		*d++;
+		length++;
+	}
+	return length;
+}
+
+void main(void){
+
+	char a[] = "Willtek";
+	printf("%d\n", sizeof(a));
+	printf("%d\n", str_length(a));
+}
+#endif
+
+#if 0
+void str_copy(char *d, const char *s)
+{
+
+	while (*d++ = *s++);
+	
+}
+void main(void){
+
+	char a[5];
+	char b[5] = "ABCD";
+	str_copy(a, b);
+	printf("%s %s\n", a, b);
+
+}
+#endif
+
+#if 0
+void main(void)
+{
+
+	int i;
+	double *p;
+	p = malloc(10 * sizeof(double));
+
+	for (i = 0; i < 10; i++)
+	{
+		//*(p + i) = i;
+		p[i] = i;
+	}
+
+	for (i = 0; i < 10; i++)
+	{
+		printf("%f\n", *(p + i));
+	}
+
+}
+#endif
+
+#if 0
+void main(void)
+{
+
+	int i;
+	int *p;
+	p = malloc(40);
+
+	for (i = 0; i < 10; i++)
+	{
+		//*(p + i) = i;
+		p[i] = i;
+	}
+
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d\n", *(p + i));
+	}
+
+}
+#endif
+
+#if 0
+void main(){
+	int a[10] = { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+	int *p;
+	p = malloc(40);
+	if (p == 0x0)
+	{
+		printf("Out of memory");
+		return;
+	}
+
+	printf("%#.8x\n", p);
+
+	for (int i = 0; i < sizeof(a)/sizeof(a[0]); i++)
+	{
+		p[i] = a[i];
+	}
+
+	for (int i = 0; i < sizeof(a)/sizeof(a[0]); i++)
+	{
+		printf("%d\n", p[i]);
+	}
+
+}
+#endif
+
+#if 0
+void main(void){
+	int cnt = 0;
+	char *p = "Embedded";
+
+	while (*p){
+		if (*p++ == 'd') cnt++;
+	}
+
+	printf("%d\n", cnt);
+}
+#endif
 
 #if 0
 
@@ -37,7 +157,6 @@ void main(void)
 
 #endif
 
-
 #if 0
 
 void percent_s(char *p)
@@ -70,7 +189,6 @@ void main(void)
 }
 
 #endif
-
 
 #if 0
 
@@ -150,7 +268,6 @@ void main(void){
 }
 #endif
 
-
 #if 0
 
 // 아래 4가지 표현식 모두 허용한다. 
@@ -209,7 +326,6 @@ void main(void)
 
 }
 #endif
-
 
 #if 0
 void main(void)
@@ -319,7 +435,6 @@ void main(void)
 }
 #endif
 
-
 #if 0
 void main(void)
 {
@@ -349,7 +464,6 @@ void main(void){
 	printf("%#.8x %#.8x\n", *(p + 1), *(p - 1));
 }
 #endif
-
 
 #if 0
 void main(void){
