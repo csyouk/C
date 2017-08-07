@@ -5,7 +5,7 @@
 #define SIZE(arr) (sizeof(arr) / sizeof(arr[FIRST]))
 #define MAIN(source_code)  void main(void){source_code}
 
-#if 1
+#if 0
 unsigned int str_length(const char *d){
 	int length = 0;
 	while (*d)
