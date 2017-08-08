@@ -3,6 +3,35 @@
 #include <string.h>
 #include "pointer_string_lib.h"
 
+#if 1
+void main(void)
+{
+	short a = 3;
+	short *p = &a;
+	short **q = &p;
+
+	printf("%x %x\n", q, q + 1);
+	printf("%x %x\n", *q, *q + 1);
+	printf("%x %x\n", **q, **q + 1);
+
+}
+#endif
+
+#if 0
+void main(void)
+{
+	int a = 1, b = 2, c = 3, d = 4;
+	int *p = &a, *q = &b, *r = &c, *s = &d;
+	int *aa[4] = { p, q, r, s };
+
+	printf("%d %d %d %d\n", *aa[0], *aa[1], *aa[2], *aa[3]);
+
+	int e[4] = { 0x1, 0x2, 0x3, 0x4 };
+	int (*f)[4] = &e;
+
+	printf("%d %d %d %d\n", (*f)[0], (*f)[1], (*f)[2], (*f)[3] );
+}
+#endif
 #if 0
 
 void share(int *basket, int*monkey, int *person, int avg, int cnt)
