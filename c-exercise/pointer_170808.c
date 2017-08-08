@@ -4,6 +4,40 @@
 #include "pointer_string_lib.h"
 
 #if 1
+struct tagA
+{
+	int i;
+	struct tagA *pA;
+} x;
+void main(void)
+{
+	printf("%d\n", sizeof(x));
+}
+#endif
+
+
+#if 0
+struct st
+{
+	int a;
+	char b;
+	short c[3];
+} x = { 10, 'A' };
+
+void main(void)
+{
+	struct st *p = &x;
+	(*p).b = 'L';
+
+	printf("%c\n", x.b);
+
+	int *q = calloc(10, sizeof(struct st));
+	printf("%d\n", sizeof(struct st));
+}
+#endif
+
+
+#if 0
 void main(void)
 {
 	short a = 3;
