@@ -104,6 +104,9 @@
     <ClCompile Include="ch_170725.c" />
     <ClCompile Include="pointer_170807.c" />
     <ClCompile Include="pointer_170807_workshop.c" />
+    <ClCompile Include="pointer_170808.c" />
+    <ClCompile Include="pointer_170808_workshop.c" />
+    <ClCompile Include="pointer_string_lib.c" />
     <ClCompile Include="pre_ch7_170725.c" />
     <ClCompile Include="chapter1.c" />
     <ClCompile Include="day3.c" />
@@ -151,6 +154,7 @@
     <ClInclude Include="experiment_ch6_extern-1.h" />
     <ClInclude Include="function_callee.h" />
     <ClInclude Include="header_level_test.h" />
+    <ClInclude Include="pointer_string_lib.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

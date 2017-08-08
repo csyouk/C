@@ -270,6 +270,15 @@
     <ClCompile Include="pointer_170807_workshop.c">
       <Filter>소스 파일\ch9.Pointer</Filter>
     </ClCompile>
+    <ClCompile Include="pointer_170808.c">
+      <Filter>소스 파일\ch9.Pointer</Filter>
+    </ClCompile>
+    <ClCompile Include="pointer_string_lib.c">
+      <Filter>소스 파일\ch9.Pointer</Filter>
+    </ClCompile>
+    <ClCompile Include="pointer_170808_workshop.c">
+      <Filter>소스 파일\ch9.Pointer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="body.h">
@@ -286,6 +295,9 @@
     </ClInclude>
     <ClInclude Include="experiment_ch6_extern-1.h">
       <Filter>소스 파일\ch6</Filter>
+    </ClInclude>
+    <ClInclude Include="pointer_string_lib.h">
+      <Filter>소스 파일\ch9.Pointer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
