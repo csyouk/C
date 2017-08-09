@@ -167,7 +167,24 @@ Text segment영역으로(Data segment에 속함) 들어가게 된다. 그리고,
   - *q의 데이터 타입은 (3)의 식에서 *q를 제외한 나머지 만큼을 가리킨다. 즉, int * 이다.
   - *q라는 데이터는 int라는 타입을 가지고 있는 데이터를 지시하고, 그 자체도 포인터(*) 이다.
 
+- 이중포인터를 활용한 문자열 교환.
+```cpp
+void swap(char **pa, char **pb)
+{
+	char **temp = *pb;
+	*pb = *pa;
+	*pa = temp;
+}
 
+void main(void)
+{
+	char *a = "scsa";
+	char *b = "hi";
+	printf("%s %s\n", a, b);
+	swap(&a, &b);
+	printf("%s %s\n", a, b);
+}
+```
 
 
 
