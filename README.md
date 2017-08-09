@@ -82,6 +82,11 @@ Recommended compiler : **gcc** compiler
 - Local variable
 
 ------------------------
+[Array](https://github.com/csyouk/deepdive_into_c/blob/master/Array.md)
+
+-
+
+------------------------
 [Struct, Union](https://github.com/csyouk/deepdive_into_c/blob/master/Struct-Union.md)
 
 - Structure
@@ -91,4 +96,9 @@ Recommended compiler : **gcc** compiler
 ------------------------
 [Pointer](https://github.com/csyouk/deepdive_into_c/blob/master/Pointer.md)
 
-- Pointer
+- Pointer.
+- Pointer with array.
+- Pointer with character.
+- Array of pointers.
+- Pointer to array.
+- Dynamic allocation.
