@@ -279,6 +279,9 @@
     <ClCompile Include="pointer_170808_workshop.c">
       <Filter>소스 파일\ch9.Pointer</Filter>
     </ClCompile>
+    <ClCompile Include="pointer_170809.c">
+      <Filter>소스 파일\ch9.Pointer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="body.h">

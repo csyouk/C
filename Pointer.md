@@ -6,6 +6,7 @@
 - **포인터 변수의 선언식에서 중요한 것은,** 포인터 변수 자체에 담긴 값이 아니라, **포인터 변수가 지시하는 변수의 타입이다.**
 - **\*, []** 연산자는 피연산자로 주소의 값을 담고 있는 변수를 취한다.
 - **->** 연산자 또한 피연산자로 주소의 값을 담고 있는 포인터 변수를 취하는데, 조건이 더 있다. **오직, 구조체 포인터만을 피연산자로 취한다.**
+- ** * ** 연산자와, ** & ** 연산자는 오직 피연산자로 포인텨형을 받을 수 있다. (이러한 규칙 때문에, 배열의 이름이 피연산자로 올 수 있다.)
 
 ```cpp
 char *p;
@@ -229,3 +230,55 @@ Text segment영역으로(Data segment에 속함) 들어가게 된다. 그리고,
 - 다음과 같은 형식으로 heap영역에 메모리를 동적으로 받아서 배열처럼 사용할 수 있다.
   - T \*p;
   - p = (T \*)malloc(n\*sizeof(T));
+
+
+## Call by address VS Call by value
+
+
+- **Call by address**
+```cpp
+void swap(int *p, int *q)
+{
+	int temp;
+	temp = *p;
+	*p = *q;
+	*q = temp;
+}
+
+void main(void)
+{
+	int a = 10, b = 20;
+	printf("before : %d, %d\n", a, b);   // 10, 20
+	swap(&a, &b);
+	printf("after  : %d, %d\n", a, b);   // 20, 10
+}
+```
+
+- **Call by Value**
+
+```cpp
+void swap(int *p, int *q)
+{
+	int * temp;
+	temp = p;
+	p = q;
+	q = temp;
+}
+
+void main(void)
+{
+	int a = 10, b = 20;
+	printf("before : %d, %d\n", a, b);   // 10, 20
+	swap(&a, &b);
+	printf("after  : %d, %d\n", a, b);   // 10, 20
+}
+```
+
+- 함수를 호출할 때, 주소값이 넘어가는 행위는 동일하다.
+- 하지만, 함수의 인자로 넘어간 포인터를 주소 값 그자체로 사용할 것인지, indirection operator를 통해서 포인터가 지시하는
+값을 조작할 것인지에 따라 그 **행위의 의도**가 달라진다.
+- 즉 주소값 그 자체만 가지고 사용하면, call by value일 것이다.
+- 하지만, 포인터가 지시하는 변수를 통해서 값을 바꾸는 행위를 한다면, call by address이다.
+- 내가 무엇을 할 것인지 **의도** 가 중요하다.
+- 통상적으로 어떠한 함수를 호출할 때, 주소값을 조작한다는 것은 그 주소값이 가르키는 값을 조작하고 싶은 의도가 더 크므로
+'Call by addres'(혹은 Call by Reference)라고 할 수 있다.

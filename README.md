@@ -5,6 +5,7 @@ Recommended compiler : **gcc** compiler
 
 ------------------------
 [Git configuration](https://github.com/csyouk/deepdive_into_c/blob/master/How-To-Manage-Git.md)
+
 [Reference : Soen](http://soen.kr/)
 ------------------------
 [Editing md files in Chrome](https://developers.google.com/web/tools/setup/setup-workflow)
@@ -84,7 +85,7 @@ Recommended compiler : **gcc** compiler
 ------------------------
 [Array](https://github.com/csyouk/deepdive_into_c/blob/master/Array.md)
 
--
+- Array with operators.
 
 ------------------------
 [Struct, Union](https://github.com/csyouk/deepdive_into_c/blob/master/Struct-Union.md)

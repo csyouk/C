@@ -4,17 +4,20 @@
 #include "pointer_string_lib.h"
 
 // 아침 쪽지 시험.
-#if 1
+#if 0
 void main(void){
 	char a[] = "SCSA";
 	char *p = a;
 
 	printf("%x\n", &a);     // 가능
 	printf("%x\n", &a++);   // 불가
-	printf("%c\n", *a);     // 
+	printf("%x\n", (&a)++); // 불가
+	printf("%c\n", *a);     // 가능
+	printf("%c\n", *a++);   // 불가
+	printf("%c\n", (*a)++); // 가능
 	printf("%x\n", p);		// 가능
 	printf("%x\n", ++p);	// 가능
-	printf("%s\n", *++p);	// 가능
+	printf("%s\n", *++p);	// 컴파일은 가능하나, 에러.
 	printf("%c", ++*p);		// 가능
 	printf("%s", a++);      // 불가
 }
