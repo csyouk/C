@@ -83,6 +83,7 @@
     <ClCompile Include="170725-1.c" />
     <ClCompile Include="170725-2.c" />
     <ClCompile Include="170725.c" />
+    <ClCompile Include="170809_bitoperator_pre.c" />
     <ClCompile Include="180.c" />
     <ClCompile Include="570.c" />
     <ClCompile Include="578.c" />
@@ -107,6 +108,7 @@
     <ClCompile Include="pointer_170808.c" />
     <ClCompile Include="pointer_170808_workshop.c" />
     <ClCompile Include="pointer_170809.c" />
+    <ClCompile Include="pointer_170809_workshop.c" />
     <ClCompile Include="pointer_string_lib.c" />
     <ClCompile Include="pre_ch7_170725.c" />
     <ClCompile Include="chapter1.c" />
@@ -156,6 +158,9 @@
     <ClInclude Include="function_callee.h" />
     <ClInclude Include="header_level_test.h" />
     <ClInclude Include="pointer_string_lib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="170809_data.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

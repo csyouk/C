@@ -52,8 +52,8 @@ int str_cmp2(const char *a, const char *b)
 	while (1)
 	{
 		if (*a > *b) return 1;
-		if (*a < *b) return 1;
-		if (*a == 0) return 1;
+		if (*a < *b) return -1;
+		if (*a == 0) return 0;
 		a++, b++;
 		
 	}
@@ -65,6 +65,13 @@ void swap(char **pa, char **pb)
 	*pb = *pa;
 	*pa = temp;
 }
+
+//void swap_struct(struct st_info *p, struct st_info *q)
+//{
+//	printf("sizeof %d \n", sizeof(*p));
+//
+//}
+
 
 
 #if 0

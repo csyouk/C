@@ -64,6 +64,12 @@
     <Filter Include="소스 파일\ch9.Pointer">
       <UniqueIdentifier>{b47096f6-1582-4bdf-8726-4c745593cd9e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\test_data">
+      <UniqueIdentifier>{9e32fa61-ac1d-4cb4-8295-27544c9b864b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ch10.BitOperator">
+      <UniqueIdentifier>{ed188604-65b5-4409-b172-13be4e8a55bd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="body.c">
@@ -282,6 +288,12 @@
     <ClCompile Include="pointer_170809.c">
       <Filter>소스 파일\ch9.Pointer</Filter>
     </ClCompile>
+    <ClCompile Include="pointer_170809_workshop.c">
+      <Filter>소스 파일\ch9.Pointer</Filter>
+    </ClCompile>
+    <ClCompile Include="170809_bitoperator_pre.c">
+      <Filter>소스 파일\ch10.BitOperator</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="body.h">
@@ -302,5 +314,10 @@
     <ClInclude Include="pointer_string_lib.h">
       <Filter>소스 파일\ch9.Pointer</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="170809_data.txt">
+      <Filter>소스 파일\test_data</Filter>
+    </Text>
   </ItemGroup>
 </Project>

@@ -9,7 +9,106 @@ void main(void)
 }
 #endif
 
-#if 1
+
+#if 0
+struct test
+{
+	int id;
+	char * name;
+	struct test *p;
+} x[3] = { {1,"Song",0}, {2,"Lew", 0}, {3,"Ki",0} };
+
+void main(void)
+{
+	struct test *p = &x[0];
+
+	x[0].p = x[1].p;
+	x[1].p = &x[2];
+	x[2].p = &x[0];
+
+	//printf(
+	//	"id : %d / name : %s \n", \
+	//	p->p->p->p->p->p->p->id, \
+	//	p->p->p->p->p->p->p->name
+	//	);
+
+	struct test (*pp)[3] = &x;
+	printf("%#.8x\n", pp);
+	printf("%#.8x\n", pp + 1);
+
+	printf("%d\n", sizeof(x));
+	printf("%#.8x\n", x);
+	printf("%#.8x\n", x+1);
+	printf("%#.8x\n", p);
+	printf("%#.8x\n", p + 1);
+	printf("%#.8x\n", &x);
+	printf("%#.8x\n", &x + 1);
+}
+#endif
+
+#if 0
+struct test
+{
+	int id;
+	char * name;
+	struct test *p;
+} x[3] = { {1,"Song",0}, {2,"Lew", 0}, {3,"Ki",0} };
+
+void main(void)
+{
+	struct test *p = &x[0];
+	x[1].p = &x[2];
+	x[0].p = &x[1];
+
+	printf("%d\n", x[0].p->id); // 2     &x[1].id
+	printf("%s\n", x[0].p->name); // Lew
+	printf("%d\n", p->p->p->id); // 3    p[2].id
+	printf("%s\n", p->p->p->name); // Ki p[2].name
+}
+#endif
+
+
+#if 0
+union uni
+{
+	int a;
+	char b[4];
+};
+int Change_Endian(union uni *p)
+{
+	char tmp;
+	union uni y;
+	y.a = p->a;
+
+	for (int i = 0; i < sizeof(y.a); i++)
+	{
+		y.b[i] = p->b[sizeof(y.a) - i - 1];
+	}
+	//y.b[0] = p->b[3];
+	//y.b[1] = p->b[2];
+	//y.b[2] = p->b[1];
+	//y.b[3] = p->b[0];
+	return y.a;
+
+	// 원본(union uni x)을 바꾸는 방법. 
+	//char temp = p->b[0];
+	//p->b[0] = p->b[3];
+	//p->b[3] = temp;
+
+	//temp = p->b[1];
+	//p->b[1] = p->b[2];
+	//p->b[2] = temp;
+	//return p->a;
+}
+void main(void)
+{
+	union uni x;
+	x.a = 0x12345678;
+	printf("%#.8x => %#.8x \n", x.a, Change_Endian(&x));
+}
+#endif
+
+#if 0
 struct test
 {
 	int id;
