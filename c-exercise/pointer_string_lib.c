@@ -30,14 +30,42 @@ int str_comp(const char *a, const char *b)
 
 	while (*a || *b)
 	{
-		if (*a++ == *b++) {
-			//a++; b++;
+		if (*a == *b) {
+			a++; b++;
 			continue;
 		}
 		return (*a > *b)? 1 : -1;
 	}
 	return 0;
 }
+
+int str_cmp_size(const char *a, const char *b)
+{
+	unsigned int size_a = 0, size_b = 0;
+	while (*a) size_a++, a++;
+	while (*b) size_b++, b++;
+	return size_a - size_b;
+}
+
+int str_cmp2(const char *a, const char *b)
+{
+	while (1)
+	{
+		if (*a > *b) return 1;
+		if (*a < *b) return 1;
+		if (*a == 0) return 1;
+		a++, b++;
+		
+	}
+}
+
+void swap(char **pa, char **pb)
+{
+	char *temp = *pb;
+	*pb = *pa;
+	*pa = temp;
+}
+
 
 #if 0
 void main(void){
