@@ -106,6 +106,7 @@
     <ClCompile Include="ch8_pre.c" />
     <ClCompile Include="ch8_workshop_170728.c" />
     <ClCompile Include="ch_170725.c" />
+    <ClCompile Include="macro_170811_pre.cpp" />
     <ClCompile Include="pointer_170807.c" />
     <ClCompile Include="pointer_170807_workshop.c" />
     <ClCompile Include="pointer_170808.c" />

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // M
-#if 1
+#if 0
 struct stu{
 	int id;
 	unsigned int score;

@@ -303,6 +303,9 @@
     <ClCompile Include="bitoperator_170810_workshop.c">
       <Filter>소스 파일\ch10.BitOperator</Filter>
     </ClCompile>
+    <ClCompile Include="macro_170811_pre.cpp">
+      <Filter>소스 파일\ch10.BitOperator</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="body.h">
