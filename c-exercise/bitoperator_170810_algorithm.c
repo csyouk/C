@@ -1,21 +1,236 @@
 #include <stdio.h>
 
-// K
+// M
 #if 1
-//1
-//1     1
-//1     2     1
-//1     3     3     1
-//1     4     6     4     1
-void main(void)
+struct stu{
+	int id;
+	unsigned int score;
+} ;
+int main(void)
 {
-	//printf("%3d", 1);
+	int n;
+	struct stu tmp;
+	struct stu stus[30000];
+
+	freopen("170810_test_data2.txt", "r", stdin);
+	scanf("%d", &n);
+
+	for (int i = 0; i < n; i++)
+	{
+		scanf("%d", &stus[i].score);
+	}
+
+	for (int i = 0; i < n; i++)
+	{
+		stus[i].id = i + 1;
+	}
+
+	for (int i = 0; i < 4; i++)
+	{
+		for (int j = i+1; j < n; j++)
+		{
+			if (stus[i].score < stus[j].score)
+			{
+				tmp = stus[i];
+				stus[i] = stus[j];
+				stus[j] = tmp;
+				//tmp.id = stu[i].id;
+				//tmp.score = stu[i].score;
+				//stu[i].id = stu[j].id;
+				//stu[i].score = stu[j].score;
+				//stu[j].id = tmp.id;
+				//stu[j].score = tmp.score;
+			}
+		}
+	}
+
+	for (int i = 0; i < 3; i++)
+	{
+		printf("%d ", stus[i].id);
+	}
+}
+#endif
+
+// L
+#if 0
+int cheol[5][5];
+int mc[25];
+
+int check()
+{
+	int cross_cnt = 0;
+	int i, j, r_sum, r_col;
+	// \ 방향
+	for (i = 0; i < 5; i++)
+	{
+		if (cheol[i][i] != 0) break;
+	}
+	if (i == 5) cross_cnt++;
+
+	// / 방향
+	for (i = 0; i < 5; i++)
+	{
+		if (cheol[i][4-i] != 0) break;
+	}
+	if (i == 5) cross_cnt++;
+
+
+
+	// 행 단위 분석
+	for (int i = 0; i < 5; i++)
+	{
+		r_sum = 0;
+		for (int j = 0; j < 5; j++)
+		{
+			r_sum += cheol[i][j];
+		}
+		if (r_sum == 0) {
+			cross_cnt++;
+			if (cross_cnt == 3) return cross_cnt;
+		}
+	}
+
+	// 열 단위 분석
+	for (int i = 0; i < 5; i++)
+	{
+		r_col = 0;
+		for (int j = 0; j < 5; j++)
+		{
+			r_col += cheol[j][i];
+		}
+		if (r_col == 0) {
+			cross_cnt++;
+			if (cross_cnt == 3) return cross_cnt;
+		}
+	}
+
+}
+int main(void)
+{
+	int st;
+	//freopen("170810_test_data.txt", "r", stdin);
+	for (int i = 0; i < 5; i++)
+	{
+		for (int j = 0; j < 5; j++)
+		{
+			scanf("%d", &cheol[i][j]);
+		}
+	}
+
+	for (int i = 0; i < 25; i++)
+	{
+		scanf("%d", &mc[i]);
+	}
+
+
+	for (int mci = 0; mci < 25; mci++)
+	{
+		// 철수 빙고 확인.
+		for (int i = 0; i < 5; i++)
+		{
+			for (int j = 0; j < 5; j++)
+			{
+				if (cheol[i][j] == mc[mci])
+				{
+					// 매치하는 인덱스 찾기.
+					cheol[i][j] = 0;
+					break;
+				}
+			}
+		}
+
+		if (check() == 3){
+			printf("%d", mci + 1);
+			return 0;
+		}
+	}
+	return 0;
+
+}
+#endif
+
+// K
+#if 0
+#include <stdio.h>
+#define MAX_ROW 10
+#define MAX_COL 19
+int con[MAX_ROW][MAX_COL];
+void print_pascal(int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = MAX_ROW - n; j < MAX_ROW + i; j++)
+		{
+			if (con[i][j] == 0)
+			{
+				printf("   ");
+			}
+			else
+			{
+				printf("%3d", con[i][j]);
+			}
+		}
+		printf("\n");
+	}
+}
+int main(void)
+{
+	int n;
+	scanf("%d", &n);
+
+	// 사선 1로 채우기
+	for (int i = 0; i < MAX_ROW; i++)
+	{
+		con[i][MAX_ROW - i - 1] = 1;
+		con[i][MAX_ROW + i - 1] = 1;
+	}
+
+	//print_pascal(n);
+
+	// 파스칼 삼각형 내부 채우기
+	for (int i = 1; i < n-1; i++)
+	{
+		for (int j = 0; j < MAX_ROW + i; j++)
+		{
+			//printf("%d %d %d\n", i, j, con[i][j]);
+			if (con[i][j] != 0)
+			{
+				con[i + 1][j + 1] = con[i][j] + con[i][j + 2];
+			}
+		}
+	}
+
+
+	for (int i = 0; i < MAX_ROW; i++)
+	{
+		con[i][MAX_ROW - i - 1] = 1;
+		con[i][MAX_ROW + i - 1] = 1;
+	}
+	
+
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = MAX_ROW - n; j < MAX_ROW + i; j++)
+		{
+			if (con[i][j] == 0)
+			{
+				printf("   ");
+			}
+			else
+			{
+				printf("%3d", con[i][j]);
+			}
+		}
+		printf("\n");
+	}
+
+	return 0;
 }
 #endif
 
 // J
 #if 0
-int container[10][10];
+int con[10][10];
 void main(void)
 {
 
@@ -24,11 +239,11 @@ void main(void)
 
 	for (int i = 0; i < n; i++)
 	{
-		container[i][0] = 1;
+		con[i][0] = 1;
 	}
 	for (int j = 0; j < n; j++)
 	{
-		container[0][j] = 1;
+		con[0][j] = 1;
 	}
 
 
@@ -36,7 +251,7 @@ void main(void)
 	{
 		for (int j = 1; j < n; j++)
 		{
-			container[i][j] = container[i - 1][j] + container[i][j - 1];
+			con[i][j] = con[i - 1][j] + con[i][j - 1];
 		}
 	}
 
@@ -46,7 +261,7 @@ void main(void)
 	{
 		for (int j = 0; j < n; j++)
 		{
-			printf("%d ", container[i][j]);
+			printf("%d ", con[i][j]);
 		}
 		printf("\n");
 	}
@@ -58,7 +273,7 @@ void main(void)
 #if 0
 #include <stdio.h>
 char charset[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-char container[100][100];
+char con[100][100];
 int main(void)
 {
 	int n;
@@ -69,7 +284,7 @@ int main(void)
 	{
 		for (int i = n-1; i >= 0; i--)
 		{
-			container[i][j] = charset[cnt];
+			con[i][j] = charset[cnt];
 			cnt++;
 			if (!(cnt % 26)) cnt = 0;
 		}
@@ -79,7 +294,7 @@ int main(void)
 	{
 		for (int j = 0; j < n; j++)
 		{
-			printf("%c ", container[i][j]);
+			printf("%c ", con[i][j]);
 		}
 		printf("\n");
 	}

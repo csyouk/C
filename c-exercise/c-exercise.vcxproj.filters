@@ -331,5 +331,11 @@
     <Text Include="170809_data.txt">
       <Filter>소스 파일\test_data</Filter>
     </Text>
+    <Text Include="170810_test_data.txt">
+      <Filter>소스 파일\test_data</Filter>
+    </Text>
+    <Text Include="170810_test_data2.txt">
+      <Filter>소스 파일\test_data</Filter>
+    </Text>
   </ItemGroup>
 </Project>
