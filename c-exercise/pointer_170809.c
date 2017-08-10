@@ -3,9 +3,36 @@
 #include "pointer_string_lib.h"
 
 #if 0
+struct st{
+	struct st *p;
+} x[3];
+
 void main(void)
 {
+	x[0].p = &x[1];
+	//int a = 3;
+	x[1].p = &x[2];
+	//int b = 4;
+	x[2].p = &x[0];
 
+	printf("%x %x %x\n", x[0].p, x[1].p, x[2].p);
+}
+
+#endif
+#if 0
+struct st
+{
+	char a;
+	char *b;
+} x = {'B', "LEW"};
+void func(struct st *y)
+{
+	++y->a; ++y->b;
+}
+void main(void)
+{
+	func(&x);
+	printf("%c %s\n", x.a, x.b);
 }
 #endif
 
@@ -55,7 +82,7 @@ struct test
 } x[3] = { {1,"Song",0}, {2,"Lew", 0}, {3,"Ki",0} };
 
 void main(void)
-{
+{						
 	struct test *p = &x[0];
 	x[1].p = &x[2];
 	x[0].p = &x[1];

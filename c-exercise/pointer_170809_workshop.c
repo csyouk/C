@@ -275,7 +275,7 @@ void main(void)
 #endif
 
 
-#if 1
+#if 0
 // i12 j2je qwe!! ABC 123ab.
 // your score is 0 hahaha
 // i12 j2je qwe!! ABC 123ab.

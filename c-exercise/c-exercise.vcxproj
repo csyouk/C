@@ -88,6 +88,7 @@
     <ClCompile Include="570.c" />
     <ClCompile Include="578.c" />
     <ClCompile Include="586.c" />
+    <ClCompile Include="bitoperatpr_170810.c" />
     <ClCompile Include="body.c" />
     <ClCompile Include="caller.c" />
     <ClCompile Include="call_by_ref.c" />

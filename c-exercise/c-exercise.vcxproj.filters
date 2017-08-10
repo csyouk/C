@@ -294,6 +294,9 @@
     <ClCompile Include="170809_bitoperator_pre.c">
       <Filter>소스 파일\ch10.BitOperator</Filter>
     </ClCompile>
+    <ClCompile Include="bitoperatpr_170810.c">
+      <Filter>소스 파일\ch10.BitOperator</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="body.h">
