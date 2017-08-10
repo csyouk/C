@@ -291,10 +291,16 @@
     <ClCompile Include="pointer_170809_workshop.c">
       <Filter>소스 파일\ch9.Pointer</Filter>
     </ClCompile>
-    <ClCompile Include="170809_bitoperator_pre.c">
+    <ClCompile Include="bitoperatpr_170810.c">
       <Filter>소스 파일\ch10.BitOperator</Filter>
     </ClCompile>
-    <ClCompile Include="bitoperatpr_170810.c">
+    <ClCompile Include="bitoperator_170809_pre.c">
+      <Filter>소스 파일\ch10.BitOperator</Filter>
+    </ClCompile>
+    <ClCompile Include="bitoperator_170810_algorithm.c">
+      <Filter>소스 파일\ch10.BitOperator</Filter>
+    </ClCompile>
+    <ClCompile Include="bitoperator_170810_workshop.c">
       <Filter>소스 파일\ch10.BitOperator</Filter>
     </ClCompile>
   </ItemGroup>
@@ -316,6 +322,9 @@
     </ClInclude>
     <ClInclude Include="pointer_string_lib.h">
       <Filter>소스 파일\ch9.Pointer</Filter>
+    </ClInclude>
+    <ClInclude Include="BINOP.h">
+      <Filter>소스 파일\ch10.BitOperator</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

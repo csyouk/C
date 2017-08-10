@@ -83,11 +83,13 @@
     <ClCompile Include="170725-1.c" />
     <ClCompile Include="170725-2.c" />
     <ClCompile Include="170725.c" />
-    <ClCompile Include="170809_bitoperator_pre.c" />
+    <ClCompile Include="bitoperator_170809_pre.c" />
     <ClCompile Include="180.c" />
     <ClCompile Include="570.c" />
     <ClCompile Include="578.c" />
     <ClCompile Include="586.c" />
+    <ClCompile Include="bitoperator_170810_algorithm.c" />
+    <ClCompile Include="bitoperator_170810_workshop.c" />
     <ClCompile Include="bitoperatpr_170810.c" />
     <ClCompile Include="body.c" />
     <ClCompile Include="caller.c" />
@@ -153,6 +155,7 @@
     <ClCompile Include="실력1856.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BINOP.h" />
     <ClInclude Include="body.h" />
     <ClInclude Include="day3.h" />
     <ClInclude Include="experiment_ch6_extern-1.h" />
