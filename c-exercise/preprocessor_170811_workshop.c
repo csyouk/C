@@ -11,7 +11,10 @@ typedef struct st_score
 } STU;
 void All_Print(STU *p)
 {
-
+	for (int i = 0; i < MAX; i++)
+	{
+		printf("%d %4s %3d %3d %3d");
+	}
 }
 void One_Print(STU *p);
 void Data_Input(STU *p);
