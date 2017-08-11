@@ -108,6 +108,7 @@
     <ClCompile Include="ch_170725.c" />
     <ClCompile Include="epilogue_170811.c" />
     <ClCompile Include="exercise_170811.c" />
+    <ClCompile Include="jungol_170811.c" />
     <ClCompile Include="macro_170811_pre.cpp" />
     <ClCompile Include="pointer_170807.c" />
     <ClCompile Include="pointer_170807_workshop.c" />
@@ -117,6 +118,7 @@
     <ClCompile Include="pointer_170809_workshop.c" />
     <ClCompile Include="pointer_string_lib.c" />
     <ClCompile Include="preprocessor_170811.c" />
+    <ClCompile Include="preprocessor_170811_workshop.c" />
     <ClCompile Include="pre_ch7_170725.c" />
     <ClCompile Include="chapter1.c" />
     <ClCompile Include="day3.c" />
@@ -171,6 +173,9 @@
     <Text Include="170809_data.txt" />
     <Text Include="170810_test_data.txt" />
     <Text Include="170810_test_data2.txt" />
+    <Text Include="170811_jungol.txt" />
+    <Text Include="170811_ws_data.txt" />
+    <Text Include="170811_ws_data_2.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -112,7 +112,6 @@ void main(){
 	time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
 	printf("apple time spent : %f\n", time_spent);
 
-
 	init();
 	begin = clock();
 	strcpy_apple(d, s);

@@ -324,6 +324,12 @@
     <ClCompile Include="exercise_170811.c">
       <Filter>소스 파일\exercise</Filter>
     </ClCompile>
+    <ClCompile Include="jungol_170811.c">
+      <Filter>소스 파일\junol</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocessor_170811_workshop.c">
+      <Filter>소스 파일\ch11.preprocessor</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="body.h">
@@ -356,6 +362,15 @@
       <Filter>소스 파일\test_data</Filter>
     </Text>
     <Text Include="170810_test_data2.txt">
+      <Filter>소스 파일\test_data</Filter>
+    </Text>
+    <Text Include="170811_jungol.txt">
+      <Filter>소스 파일\test_data</Filter>
+    </Text>
+    <Text Include="170811_ws_data.txt">
+      <Filter>소스 파일\test_data</Filter>
+    </Text>
+    <Text Include="170811_ws_data_2.txt">
       <Filter>소스 파일\test_data</Filter>
     </Text>
   </ItemGroup>
