@@ -114,6 +114,7 @@
     <ClCompile Include="pointer_170809.c" />
     <ClCompile Include="pointer_170809_workshop.c" />
     <ClCompile Include="pointer_string_lib.c" />
+    <ClCompile Include="preprocessor_170811.c" />
     <ClCompile Include="pre_ch7_170725.c" />
     <ClCompile Include="chapter1.c" />
     <ClCompile Include="day3.c" />

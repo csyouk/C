@@ -70,6 +70,9 @@
     <Filter Include="소스 파일\ch10.BitOperator">
       <UniqueIdentifier>{ed188604-65b5-4409-b172-13be4e8a55bd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\ch11.preprocessor">
+      <UniqueIdentifier>{815bed15-c4a3-4561-9e8a-ef915f7e80c8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="body.c">
@@ -305,6 +308,9 @@
     </ClCompile>
     <ClCompile Include="macro_170811_pre.cpp">
       <Filter>소스 파일\ch10.BitOperator</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocessor_170811.c">
+      <Filter>소스 파일\ch11.preprocessor</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
