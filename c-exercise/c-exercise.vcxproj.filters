@@ -73,6 +73,12 @@
     <Filter Include="소스 파일\ch11.preprocessor">
       <UniqueIdentifier>{815bed15-c4a3-4561-9e8a-ef915f7e80c8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\epilogue">
+      <UniqueIdentifier>{3ea41935-316f-4454-b48d-f195b92f575c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\exercise">
+      <UniqueIdentifier>{6a54be1f-2ee2-47c1-bfa1-4766d1fb5ed8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="body.c">
@@ -311,6 +317,12 @@
     </ClCompile>
     <ClCompile Include="preprocessor_170811.c">
       <Filter>소스 파일\ch11.preprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="epilogue_170811.c">
+      <Filter>소스 파일\epilogue</Filter>
+    </ClCompile>
+    <ClCompile Include="exercise_170811.c">
+      <Filter>소스 파일\exercise</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

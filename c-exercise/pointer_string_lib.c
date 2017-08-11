@@ -1,5 +1,42 @@
 #include <stdio.h>
 
+void str_copy_with_use_register(register char *d, register const char *s)
+{
+	while (*d++ = *s++);
+}
+
+void str_copy_with_designated_length(char *d, const char *s, const int len)
+{
+	register unsigned int len_r= 0;
+	while (len_r < len)
+	{
+		d[len_r] = s[len_r];
+		len_r++;
+		//printf("%d\n", len_r);
+	}
+}
+
+char* my_strcpy(char *dest, const char *src)
+{
+	char *d = dest;
+	register char c;
+
+	do {
+		c = *src++;
+		*d++ = c;
+	} while ('\0' != c);
+
+	return dest;
+}
+
+void strcpy_apple(char *s1, const char *s2)
+{
+	char *s = s1;
+	while ((*s++ = *s2++) != 0)
+		;
+	return (s1);
+}
+
 void str_copy(char *d, const char *s)
 {
 	while (*d++ = *s++);

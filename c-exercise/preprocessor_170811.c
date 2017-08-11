@@ -1,6 +1,139 @@
 #include <stdio.h>
+#include <time.h>
+#include "string.h"
+#include "pointer_string_lib.h"
 
-#if 1
+#if 0
+void main(void)
+{
+	char a[4] = {1,2,3,4};
+
+	char *p = a;
+
+	++*p;
+	printf("%x  ", p);
+	for (int i = 0; i < 4; i++)
+	{
+		printf("%d ", a[i]);
+	}
+	printf("\n");
+
+	*p++;
+	printf("%x  ", p);
+	for (int i = 0; i < 4; i++)
+	{
+		printf("%d ", a[i]);
+	}
+	printf("\n");
+
+
+	(*p)++;
+	printf("%x  ", p);
+	for (int i = 0; i < 4; i++)
+	{
+		printf("%d ", a[i]);
+	}
+	printf("\n");
+}
+#endif
+
+
+#if 0
+void main(void)
+{
+	for (int i = 0; i < 10; i++)
+	{
+		printf("h");
+	}
+	printf("\n");
+
+	printf("i = %d\n", i); // error
+}
+#endif
+
+#if 0
+
+char s[1024 * 1024 * 100] = { 'A' };
+char d[1024 * 1024 * 100] = { -1 };
+
+void disp(char *p){
+	while (*p)
+	{
+		printf("%c", *p);
+		p++;
+	}
+	printf("\n");
+}
+
+void init()
+{
+	for (int i = 0; i < sizeof(d)-1; i++)
+	{
+		s[i] = 'A';
+		d[i] = 3;
+	}
+}
+
+void main(){
+
+	clock_t begin;
+	clock_t end;
+	double time_spent;
+
+
+
+
+	init();
+	begin = clock();
+	str_copy(d, s);
+	end = clock();
+	time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+	printf("mycode time spent : %f\n", time_spent);
+
+
+	init();
+	begin = clock();
+	str_copy_with_designated_length(d, s, 1024 * 1024 * 100);
+	end = clock();
+	time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+	printf("mycode-designated len, time spent : %f\n", time_spent);
+
+	init();
+	begin = clock();
+	str_copy_with_use_register(d, s);
+	end = clock();
+	time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+	printf("mycode use register, time spent : %f\n", time_spent);
+
+	init();
+	begin = clock();
+	strcpy_apple(d, s);
+	end = clock();
+	time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+	printf("apple time spent : %f\n", time_spent);
+
+
+	init();
+	begin = clock();
+	strcpy_apple(d, s);
+	my_strcpy(d, s);
+	end = clock();
+	time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+	printf("stackoverflow time spent : %f\n", time_spent);
+
+	init();
+	begin = clock();
+	strcpy(d, s);
+	end = clock();
+	time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+	printf("library time spent : %f\n", time_spent);
+
+
+
+}
+#endif
+
+#if 0
 #include <stdlib.h>
 #include <time.h>
 #define RANDOM(mini, maxi) ((rand() % (maxi - (mini - 1))) + (mini))
