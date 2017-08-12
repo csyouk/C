@@ -176,6 +176,7 @@
     <Text Include="170811_jungol.txt" />
     <Text Include="170811_ws_data.txt" />
     <Text Include="170811_ws_data_2.txt" />
+    <Text Include="170811_ws_data_3.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
