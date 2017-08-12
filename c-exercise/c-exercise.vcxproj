@@ -156,6 +156,7 @@
     <ClCompile Include="structure.c" />
     <ClCompile Include="upper_lower.c" />
     <ClCompile Include="variable.c" />
+    <ClCompile Include="weekend_170812.c" />
     <ClCompile Include="whileloop.c" />
     <ClCompile Include="workshop-2.c" />
     <ClCompile Include="실력1856.c" />

@@ -79,6 +79,9 @@
     <Filter Include="소스 파일\exercise">
       <UniqueIdentifier>{6a54be1f-2ee2-47c1-bfa1-4766d1fb5ed8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\weekend">
+      <UniqueIdentifier>{f55596c4-c3a7-466a-91a2-328424e33d26}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="body.c">
@@ -329,6 +332,9 @@
     </ClCompile>
     <ClCompile Include="preprocessor_170811_workshop.c">
       <Filter>소스 파일\ch11.preprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="weekend_170812.c">
+      <Filter>소스 파일\weekend</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
