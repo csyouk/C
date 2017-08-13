@@ -1,101 +1,16 @@
-﻿빌드 시작: 2017-08-13 오후 5:07:18
+﻿빌드 시작: 2017-08-14 오전 7:50:42
      1>2 노드의 "C:\Users\student\Desktop\workspace\deepdive_into_c\c-exercise\c-exercise.vcxproj" 프로젝트(Build 대상)입니다.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt weekend_170812.c
-         weekend_170812.c
-     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\weekend_170812.c(34): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 'scanf' 선언을 참조하십시오.
-     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\weekend_170812.c(36): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 'scanf' 선언을 참조하십시오.
-     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\weekend_170812.c(32): warning C4101: 's' :참조되지 않은 지역 변수입니다.
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\student\Desktop\workspace\deepdive_into_c\Debug\c-exercise.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\student\Desktop\workspace\deepdive_into_c\Debug\c-exercise.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\student\Desktop\workspace\deepdive_into_c\Debug\c-exercise.lib" /MACHINE:X86 Debug\168.obj
-         Debug\169.obj
-         "Debug\170721-K.obj"
-         Debug\170724.obj
-         "Debug\170725-1.obj"
-         "Debug\170725-2.obj"
-         Debug\170725.obj
-         Debug\bitoperator_170809_pre.obj
-         Debug\180.obj
-         Debug\570.obj
-         Debug\578.obj
-         Debug\586.obj
-         Debug\bitoperator_170810_algorithm.obj
-         Debug\bitoperator_170810_workshop.obj
-         Debug\bitoperatpr_170810.obj
-         Debug\body.obj
-         Debug\caller.obj
-         Debug\call_by_ref.obj
-         Debug\call_by_value.obj
-         Debug\ch5_examples.obj
-         Debug\ch6_examples.obj
-         Debug\ch7_170727.obj
-         Debug\ch7_170727_workshop.obj
-         Debug\ch7_examples.obj
-         Debug\ch7_recursive.obj
-         Debug\ch7_workshop_170726.obj
-         Debug\ch8_170728.obj
-         Debug\ch8_pre.obj
-         Debug\ch8_workshop_170728.obj
-         Debug\ch_170725.obj
-         Debug\epilogue_170811.obj
-         Debug\exercise_170811.obj
-         Debug\jungol_170811.obj
-         Debug\macro_170811_pre.obj
-         Debug\pointer_170807.obj
-         Debug\pointer_170807_workshop.obj
-         Debug\pointer_170808.obj
-         Debug\pointer_170808_workshop.obj
-         Debug\pointer_170809.obj
-         Debug\pointer_170809_workshop.obj
-         Debug\pointer_string_lib.obj
-         Debug\preprocessor_170811.obj
-         Debug\preprocessor_170811_workshop.obj
-         Debug\pre_ch7_170725.obj
-         Debug\chapter1.obj
-         Debug\day3.obj
-         Debug\day4.obj
-         Debug\debug.obj
-         Debug\dec_hex.obj
-         Debug\diff_time.obj
-         Debug\domino.obj
-         Debug\dowhile.obj
-         Debug\enumeration.obj
-         Debug\exam.obj
-         Debug\exam2.obj
-         "Debug\experiment_ch6_extern-1.obj"
-         "Debug\experiment_ch6_extern-2.obj"
-         Debug\fibonacci.obj
-         Debug\forloop.obj
-         Debug\format_directive.obj
-         Debug\function1_self_diagnosis.obj
-         Debug\function_caller.obj
-         Debug\function_callee.obj
-         Debug\gotosum.obj
-         Debug\header_level_test.obj
-         Debug\ifelsestatement.obj
-         Debug\levetest170724.obj
-         Debug\operator.obj
-         Debug\pointer.obj
-         Debug\preprocessor.obj
-         Debug\preprocessor_exercise.obj
-         Debug\scanning.obj
-         Debug\scratch.obj
-         Debug\self_c_function_2.obj
-         Debug\self_c_func_2.obj
-         Debug\self_c_func_2_1.obj
-         Debug\sizeof.obj
-         Debug\structure.obj
-         Debug\upper_lower.obj
-         Debug\variable.obj
-         Debug\weekend_170812.obj
-         Debug\whileloop.obj
-         "Debug\workshop-2.obj"
-         "Debug\실력1856.obj"
-         c-exercise.vcxproj -> C:\Users\student\Desktop\workspace\deepdive_into_c\Debug\c-exercise.exe
-     1>"C:\Users\student\Desktop\workspace\deepdive_into_c\c-exercise\c-exercise.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt pointer_170808.c pointer_170809.c
+         pointer_170809.c
+         pointer_170808.c
+     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\pointer_170808.c(13): error C2105: '++'에 l-value가 필요합니다.
+     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\pointer_170808.c(14): error C2105: '++'에 l-value가 필요합니다.
+     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\pointer_170808.c(16): error C2105: '++'에 l-value가 필요합니다.
+     1>c:\users\student\desktop\workspace\deepdive_into_c\c-exercise\pointer_170808.c(22): error C2105: '++'에 l-value가 필요합니다.
+         코드를 생성하고 있습니다...
+     1>"C:\Users\student\Desktop\workspace\deepdive_into_c\c-exercise\c-exercise.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
 
-빌드했습니다.
+빌드하지 못했습니다.
 
-경과 시간: 00:00:00.54
+경과 시간: 00:00:00.29
