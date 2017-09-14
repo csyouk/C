@@ -159,9 +159,6 @@
     <ClCompile Include="function1_self_diagnosis.c">
       <Filter>소스 파일\junol</Filter>
     </ClCompile>
-    <ClCompile Include="실력1856.c">
-      <Filter>소스 파일\junol</Filter>
-    </ClCompile>
     <ClCompile Include="diff_time.c">
       <Filter>소스 파일\junol</Filter>
     </ClCompile>

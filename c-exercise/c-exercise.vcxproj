@@ -159,7 +159,6 @@
     <ClCompile Include="weekend_170812.c" />
     <ClCompile Include="whileloop.c" />
     <ClCompile Include="workshop-2.c" />
-    <ClCompile Include="실력1856.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BINOP.h" />
